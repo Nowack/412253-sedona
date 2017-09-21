@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Svetlana Novak](https://up.htmlacademy.ru/adaptive/12/user/412253).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Старшинов](https://htmlacademy.ru/profile/id100874).
 
 ---
 
