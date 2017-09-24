@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logotip-mobile.svg" width="102px" height="83px" alt="Логотип Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-feedback">
+      <h1 class="visually-hidden">Форма для отзыва</h1>
+      <section class="banner">
+        <h2 class="visually-hidden">Баннер</h1>
+      </section>
+      <section class="feedback-form">
+        <header class="section-header">
+          <h2 class="feedback-form__slogan">Оставьте свой отзыв</h2>
+          <p class="feedback-form__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </header>
+        <form class="feedback-form__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="feedback-form__field">
+            <caption class="feedback-form__title">Представьтесь:</caption>
+            <p>
+              <label class="feedback-form__item feedback-form__subscribe" for="your-name">Имя:</label>
+              <input class="feedback-form__item feedback-form__input" type="text" name="your-name" id="your-name" placeholder="Пётр">
+            </p>
+            <p>
+              <label class="feedback-form__item feedback-form__subscribe" for="surname">Фамилия:</label>
+              <input class="feedback-form__item feedback-form__input" type="text" name="surname" id="surname" placeholder="Иванов">
+            </p>
+            <p>
+              <label class="feedback-form__item feedback-form__subscribe" for="patronymic">Отчество:</label>
+              <input class="feedback-form__item feedback-form__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+            </p>
+          </fieldset>
+          <fieldset class="feedback-form__field">
+            <caption class="feedback-form__title">Контактная информация:</caption>
+          </fieldset>
+          <fieldset class="feedback-form__field">
+            <caption class="feedback-form__title">Ваше общее впечатление:</caption>
+          </fieldset>
+          <fieldset class="feedback-form__field">
+            <caption class="feedback-form__title">Посещённые достопримечательности:</caption>
+          </fieldset>
+          <fieldset class="feedback-form__field">
+            <caption class="feedback-form__title">Опишите свои эмоции:</caption>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__hashtags hashtags">
+        <p class="page-footer__hashtag"></p>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="page-footer__social-list">
+          <li class="social-item">
+            <a class="social-link social-link--twitter" href="#">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link--faceboock" href="#">
+              <span class="visually-hidden">Мы в Фэйсбуке</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link--yuotube" href="#">
+              <span class="visually-hidden">Мы на Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__social copiright">
+        <a class="page-footer__copiright-link" href="#">Разработано</a>
+      </div>
+    </footer>
+  </body>
+</html>
