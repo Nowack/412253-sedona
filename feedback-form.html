@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo-link" href="index.html">
         <img class="page-header__logo-image" src="img/logotip-mobile.svg" width="102px" height="83px" alt="Логотип Седона">
       </a>
       <nav class="main-nav">
@@ -15,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="photo-video.html">Фото и видео</a>
+              <a class="site-list__link" href="photo-video.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a>Форма отзыва</a>
+              <a class="site-list__link site-list__link--active">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://up.htmlacademy.ru/adaptive/12">HTML academy</a>
+              <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/12">HTML academy</a>
             </li>
           </ul>
         </div>
@@ -47,74 +47,105 @@
 
         <form class="feedback-form__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="feedback-form__field">
-            <caption class="feedback-form__title">Представьтесь:</caption>
-            <p class="feedback-form__wrap">
-              <label class="feedback-form__item feedback-form__subscribe" for="your-name">Имя:</label>
-              <input class="feedback-form__item feedback-form__input" type="text" name="your-name" id="your-name" placeholder="Пётр">
-            </p>
-            <p class="feedback-form__wrap">
-              <label class="feedback-form__item feedback-form__subscribe" for="surname">Фамилия:</label>
-              <input class="feedback-form__item feedback-form__input" type="text" name="surname" id="surname" placeholder="Иванов">
-            </p>
-            <p class="feedback-form__wrap">
-              <label class="feedback-form__item feedback-form__subscribe" for="patronymic">Отчество:</label>
-              <input class="feedback-form__item feedback-form__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
-            </p>
-          </fieldset>
+          <div class="feedback-form__field">
+            <span class="feedback-form__title">Представьтесь:</span>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <span class="feedback-form__subscribe">Имя:</span>
 
-          <fieldset class="feedback-form__field">
-            <caption class="feedback-form__title">Контактная информация:</caption>
-            <p class="feedback-form__wrap">
-              <label class="feedback-form__item feedback-form__subscribe" for="telephone">Контактный телефон:</label>
-              <input class="feedback-form__item feedback-form__input feedback-form__input-picture" type="tel" name="telephone" id="telephone" placeholder="Введите телефон">
-            </p>
-            <p class="feedback-form__wrap">
-              <label class="feedback-form__item feedback-form__subscribe" for="email">Электронная почта:</label>
-              <input class="feedback-form__item feedback-form__input feedback-form__input-picture" type="email" name="email" id="email" placeholder="Введите e-mail">
-            </p>
-          </fieldset>
+                <input class="feedback-form__item feedback-form__input" type="text" name="your-name" placeholder="Пётр">
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <span class="feedback-form__subscribe">Фамилия:</span>
+                <input class="feedback-form__item feedback-form__input" type="text" name="surname" placeholder="Иванов">
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <span class="feedback-form__subscribe">Отчество:</span>
+                <input class="feedback-form__item feedback-form__input" type="text" name="patronymic" placeholder="Александрович">
+              </label>
+            </div>
+          </div>
 
-          <fieldset class="feedback-form__field feedback-form__field-radio">
-            <caption class="feedback-form__title">Ваше общее впечатление:</caption>
-            <p class="feedback-form__wrap">
-              <input class="feedback-form__radio" type="radio" id="radio1" name="impression" value="1">
-              <label class="feedback-form__item feedback-form__subscribe" for="radio1">Скорее положительное</label>
-            </p>
-            <p class="feedback-form__wrap">
-              <input class="feedback-form__radio" type="radio" id="radio2" name="impression" value="2">
-              <label class="feedback-form__radio feedback-form__subscribe" for="radio2">Скорее отрицательное</label>
-            </p>
-            <p class="feedback-form__wrap">
-              <input class="feedback-form__radio" type="radio" id="radio3" name="impression" value="3">
-              <label class="feedback-form__item feedback-form__subscribe" for="radio3">Затрудняюсь ответить</label>
-            </p>
-          </fieldset>
+          <div class="feedback-form__field">
+            <span class="feedback-form__title">Контактная информация:</span>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <span class="feedback-form__subscribe">Контактный телефон:</span>
+                <input class="feedback-form__item feedback-form__input feedback-form__input-picture" type="tel" name="telephone" placeholder="Введите телефон">
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <span class="feedback-form__subscribe">Электронная почта:</span>
+                <input class="feedback-form__item feedback-form__input feedback-form__input-picture" type="email" name="email" placeholder="Введите e-mail">
+              </label>
+            </div>
+          </div>
 
-          <fieldset class="feedback-form__field">
-            <caption class="feedback-form__title">Посещённые достопримечательности:</caption>
-            <p class="feedback-form__wrap">
-              <input class="feedback-form__checkbox" type="checkbox" id="devil-bridge" name="devil-bridge">
-              <label class="feedback-form__item feedback-form__subscribe" for="devil-bridge">Мост Дьявола</label>
-            </p>
-            <p class="feedback-form__wrap">
-              <input class="feedback-form__checkbox" type="checkbox" id="slide-park" name="slide-park">
-              <label class="feedback-form__radio feedback-form__subscribe" for="slide-park">Слайд-парк</label>
-            </p>
-            <p class="feedback-form__wrap">
-              <input class="feedback-form__checkbox" type="checkbox" id="mount-bell" name="mount-bell">
-              <label class="feedback-form__item feedback-form__subscribe" for="mount-bell">Гора колокол</label>
-            </p>
-          </fieldset>
+          <div class="feedback-form__field feedback-form__field-radio">
+            <span class="feedback-form__title">Ваше общее впечатление:</span>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <input class="feedback-form__radio" type="radio" name="impression" value="1">
+                <span class="feedback-form__subscribe">Скорее положительное</span>
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <input class="feedback-form__radio" type="radio" name="impression" value="2">
+                <span class="feedback-form__subscribe">Скорее отрицательное</span>
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <input class="feedback-form__radio" type="radio" name="impression" value="3">
+                <span class="feedback-form__subscribe">Затрудняюсь ответить</span>
+              </label>
+            </div>
+          </div>
+          <div class="feedback-form__field">
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <input class="feedback-form__checkbox" type="checkbox" name="devil-bridge">
+                <span class="feedback-form__subscribe">Мост Дьявола</span>
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <input class="feedback-form__checkbox" type="checkbox" name="slide-park">
+                <span class="feedback-form__subscribe">Слайд-парк</span>
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <input class="feedback-form__checkbox" type="checkbox" name="mount-bell">
+                <span class="feedback-form__subscribe">Гора колокол</span>
+              </label>
+            </div>
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <input class="feedback-form__checkbox" type="checkbox" name="red-rocks">
+                <span class="feedback-form__subscribe">Красные скалы</span>
+              </label>
+            </div>
+          </div>
 
-          <fieldset class="feedback-form__field">
-            <caption class="feedback-form__title">Опишите свои эмоции:</caption>
-            <p class="feedback-form__wrap">
-              <textarea class="feedback-form__comment" name="name" rows="8" cols="30">
-              Опишите подробно свои восторги
-              </textarea>
-            </p>
-          </fieldset>
+          <div class="feedback-form__field">
+            <div class="feedback-form__wrap">
+              <label class="feedback-form__label">
+                <span class="feedback-form__subscribe">Опишите свои эмоции</span>
+                <div class="feedback-form__comment-wrap">
+                  <textarea class="feedback-form__comment" name="name" rows="8" cols="30">
+                  Опишите подробно свои восторги
+                  </textarea>
+                </div>
+              </label>
+            </div>
+          </div>
 
           <button type="submit" class="button feedback-form__button" name="feedback-button">Отправить отзыв</button>
 
