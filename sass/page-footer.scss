@@ -2,6 +2,9 @@ $main-bg: #ffffff;
 $black: #000000;
 
 .page-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background:{
     color: $main-bg;
   }
@@ -17,7 +20,7 @@ $black: #000000;
     right: 25px;
     bottom: 20px;
     left: 25px;
-  } 
+  }
 }
 .page-footer__copiright-link,
 .page-footer__hashtag-link{
@@ -26,4 +29,12 @@ $black: #000000;
 }
 .page-footer__hashtag-link{
   font-weight: 700;
+}
+.page-footer__logo {
+  height: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.page-footer__logo-path{
+  fill: #000000;
 }
