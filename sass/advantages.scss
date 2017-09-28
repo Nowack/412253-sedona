@@ -19,16 +19,18 @@ $border-color: #d6d6d6;
 }
 .advantages__item{
   margin: 0;
+
+}
+.advantages__item-detail{
+  background-color: $detail-head;
+  color: $head-color;
+  width: auto;
   padding:{
     top: 20px;
     right: 25px;
     bottom: 20px;
     left: 25px;
   }
-}
-.advantages__item-detail{
-  background-color: $detail-head;
-  color: $head-color;
 }
 .advantages__item-shortly{
   padding:{
