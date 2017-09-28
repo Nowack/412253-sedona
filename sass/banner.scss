@@ -2,4 +2,10 @@
   height: 390px;
   width: 100%;
   background-color: #d6e8f2;
+  background:{
+    image: url(../img/bg-back-mobile@1x.jpg);
+    position: top center;
+    repeat: no-repeat;
+    size: cover;
+  }
 }
