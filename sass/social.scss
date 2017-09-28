@@ -1,9 +1,9 @@
 $navy: #81b3d2;
 
 .social-list{
-  margin: 0;
+  margin: 30px 0 ;
   padding: 0;
-  width: 152px;
+
 }
 .social-item{
   list-style: none;
@@ -11,6 +11,12 @@ $navy: #81b3d2;
   width: 46px;
   height: 48px;
   background-color: $navy;
+  margin: 0;
+  padding: 0;
+  margin-right: 6px;
+  &:last-child{
+    margin-right: 0;
+  }
 }
 .social-link{
   text-decoration: none;
