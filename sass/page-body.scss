@@ -1,3 +1,12 @@
+$main-bg: #ffffff;
 .page-body{
-  background-color: #ffffff;
+  background:{
+    color: $main-bg;
+  }
+  font:{
+    family: 'PT Sans', sans-serif;
+    size: 14px;
+    weight: 500;
+  }
+  line-height: 26px;
 }
