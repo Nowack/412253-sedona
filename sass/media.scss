@@ -1,0 +1,22 @@
+$border-color: #e5e5e5;
+.media__photo-item {
+  text-align: left;
+  padding: 20px;
+  border-top: 1px solid $border-color;
+  &:last-child{
+    border-bottom: 1px solid $border-color;
+  }
+}
+.media__photo{
+  width: 100%;
+  background-color: red;
+}
+.media__title{
+  margin: 0;
+}
+.media__description{
+  margin: 0 0 5px 0;
+}
+.media__author{
+  text-transform: none;
+}
