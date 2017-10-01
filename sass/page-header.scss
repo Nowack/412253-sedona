@@ -1,0 +1,9 @@
+.page-header{
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+.page-header__logo-link{
+  margin: 0 auto;
+  margin-bottom: -35px;
+}
