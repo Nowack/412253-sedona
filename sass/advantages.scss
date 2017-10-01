@@ -3,6 +3,8 @@ $main-bg: #ffffff;
 $head-color: #ffffff;
 $shortly-head: #eeeeee;
 $border-color: #d6d6d6;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 .advantages__title,
 .advantages__detail-title{
   font-size: 18px;
@@ -55,7 +57,6 @@ $border-color: #d6d6d6;
 .advantages__description{
   line-height: 21px;
 }
-
 .advantages__detail-list{
   text-align: left;
   width: 100%;
@@ -79,4 +80,66 @@ $border-color: #d6d6d6;
 }
 .advantages__detail-text{
   margin: 0;
+}
+.advantages__image{
+  width: 100%;
+  height: 260px;
+  background:{
+    color: #d39c81;
+    image: url(../img/main-bridge-mobile@1x.jpg);
+    position: top center;
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+@media (min-width: $tablet-width){
+  .advantages__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages__detail-list{
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  .advantages__detail-item{
+    flex-basis: 33,3%;
+    padding-top: 80px;
+    padding-left: 3%;
+    padding-right: 3%;
+    &:nth-child(2){
+      order: 3;
+    }
+  }
+  .advantages__detail-title{
+    font-size: 21px;
+  }
+  .advantages__item-shortly{
+    width: 33.3%;
+    margin: 0;
+  }
+  .advantages__wrapp{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .advantages__wrapp-revers{
+    flex-direction: row-reverse;
+  }
+  .advantages__item-detail{
+    width: 66,3%;
+  }
+  .advantages__image{
+    width: 33,3%;
+
+  }
+}
+
+@media (min-width: $desktop-width){
+  .advantages__detail-item{
+
+  }
+  .advantages__image{
+    background-image: url(../img/big-photo-bridge@1x.jpg);
+  }
 }
