@@ -1,5 +1,6 @@
 $main-bg: #ffffff;
 .page-body{
+  min-width: 320px;
   background:{
     color: $main-bg;
   }
@@ -7,6 +8,7 @@ $main-bg: #ffffff;
     family: 'PT Sans', sans-serif;
     size: 14px;
     weight: 500;
+    style: normal;
   }
   line-height: 26px;
   text-transform: uppercase;
