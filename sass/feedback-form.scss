@@ -1,0 +1,20 @@
+.feedback-form__field{
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.feedback-form__subscribe{
+  text-transform: none;
+}
+.feedback-form__subscribe-input{
+  font-weight: 500;
+}
+.feedback-form__input[placeholder]{
+  font: inherit;
+  font-weight: 700;
+  color: #000000;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border: none;
+}
