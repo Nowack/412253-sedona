@@ -1,6 +1,7 @@
 $main-bg: #ffffff;
 $black: #000000;
-
+$tablet-width: 768px;
+$desktop-width: 1200px;
 .page-footer{
   display: flex;
   flex-direction: column;
@@ -37,4 +38,30 @@ $black: #000000;
 }
 .page-footer__logo-path{
   fill: #000000;
+}
+@media (min-width: $tablet-width){
+  .page-footer{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .page-footer__item{
+    flex-basis: 190px;
+    display: flex;
+    &:nth-child(1){
+    justify-content: flex-start;
+    }
+    &:nth-child(2){
+    justify-content: center;
+    }
+    &:nth-child(3){
+    justify-content: flex-end;
+    }
+  }
+}
+@media (min-width: $desktop-width){
+  .page-footer__item{
+    &:nth-child(1){
+      justify-content: center;
+    }
+  }
 }
