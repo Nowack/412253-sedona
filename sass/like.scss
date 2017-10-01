@@ -1,7 +1,16 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
 .like-button{
   height: 23px;
   width: 23px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
+}
+@media (min-width: $tablet-width){
+  .like{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  }
 }
