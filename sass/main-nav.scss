@@ -15,9 +15,10 @@ $font-color: #ffffff;
 .main-nav__list{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .site-list__item{
-  list-style: none;
+
   margin: 0;
   padding: 0;
   text-align: center;
@@ -37,10 +38,18 @@ $font-color: #ffffff;
   display: inline-block;
   vertical-align: middle;
   padding:{
-    top: 8px;
-    bottom: 8px;
+    top: 7px;
+    bottom: 7px;
   }
   text-decoration: none;
   width: 100%;
   color: $font-color;
+}
+.main-nav__toggle{
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
 }
