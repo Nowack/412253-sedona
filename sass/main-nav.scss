@@ -2,6 +2,8 @@ $nav-bg: #81b3d2;
 $border-bottom: #678fa8;
 $border-top: #9ac2db;
 $font-color: #ffffff;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 .main-nav {
   background-color: $nav-bg;
   color: #ffffff;
@@ -15,9 +17,9 @@ $font-color: #ffffff;
 .main-nav__list{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .site-list__item{
-  list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -37,10 +39,44 @@ $font-color: #ffffff;
   display: inline-block;
   vertical-align: middle;
   padding:{
-    top: 8px;
-    bottom: 8px;
+    top: 7px;
+    bottom: 7px;
   }
   text-decoration: none;
   width: 100%;
   color: $font-color;
+}
+.main-nav__toggle{
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+@media (min-width: $tablet-width) {
+  .main-nav__list{
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .site-list__item{
+    flex-basis: 160px;
+    margin-left: 0;
+    background-color: #ffffff;
+    border: none;
+    &:nth-child(2){
+      margin-right: auto;
+    }
+  }
+  .site-list__link{
+    color: #000000;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .main-nav__toggle{
+    display: none;
+  }
 }

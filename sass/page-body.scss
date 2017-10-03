@@ -1,5 +1,8 @@
 $main-bg: #ffffff;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 .page-body{
+  min-width: 320px;
   background:{
     color: $main-bg;
   }
@@ -7,12 +10,25 @@ $main-bg: #ffffff;
     family: 'PT Sans', sans-serif;
     size: 14px;
     weight: 500;
+    style: normal;
   }
   line-height: 26px;
   text-transform: uppercase;
 }
 .page-body__container{
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding: 0;
+}
+@media (min-width: $tablet-width) {
+  .page-body__container{
+    width: 640px;
+    padding: 0;
+  }
+}
+@media (min-width: $desktop-width) {
+  .page-body__container{
+    width: 960px;
+    padding: 0 40px;
+  }
 }
