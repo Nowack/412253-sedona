@@ -23,17 +23,20 @@ $desktop-width: 1200px;
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 100%;
+
   border:{
     bottom: 1px solid $border-bottom;
     top: 1px solid $border-top;
   }
-  &:first-child{
-    border-top: none;
-  }
-  &:last-child{
+  &:first-of-type:last-child{
     border-bottom: none;
   }
+}
+
+.site-list-logo{
+  border: none;
+  background-color: #ffffff;
+  height: 56px;
 }
 .site-list__link{
   display: inline-block;
@@ -46,30 +49,40 @@ $desktop-width: 1200px;
   width: 100%;
   color: $font-color;
 }
+.site-list-right .site-list__item:nth-child(2){
+  border-bottom: none;
+}
 .main-nav__toggle{
   position: absolute;
   height: 32px;
   width: 32px;
-  position: absolute;
   bottom: 10px;
   right: 20px;
 }
 @media (min-width: $tablet-width) {
   .main-nav__list{
     display: flex;
+    flex-direction: row;
     flex-shrink: 0;
-    flex-wrap: wrap;
+    width: 40%;
     align-items: center;
     background-color: #ffffff;
   }
   .site-list__item{
-    flex-basis: 160px;
     margin-left: 0;
     background-color: #ffffff;
     border: none;
-    &:nth-child(2){
-      margin-right: auto;
-    }
+    flex-basis: 50%;
+  }
+  .site-list-right{
+    margin-left: auto;
+  }
+  .site-list-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
+    background-color: transparent;
   }
   .site-list__link{
     color: #000000;
