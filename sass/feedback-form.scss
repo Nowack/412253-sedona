@@ -1,11 +1,20 @@
 $tablet-width: 768px;
 $desktop-width: 1200px;
+.feedback-form__description{
+  text-align: center;
+}
+.feedback-form__title{
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
 .feedback-form__field{
   border-bottom: 1px solid #e5e5e5;
-  padding: 15px;
   font-size: 18px;
   font-weight: 700;
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -19,9 +28,84 @@ $desktop-width: 1200px;
   font: inherit;
   font-weight: 700;
   color: #000000;
-  padding: 5px;
+  padding: 10px;
+  padding-left: 15px;
   background-color: #f2f2f2;
   border: none;
+
+}
+.feedback-form__label{
+  display: flex;
+}
+ .feedback-form__field-name .feedback-form__label{
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.feedback-form__field-contacts .feedback-form__label{
+  flex-wrap: wrap;
+  display: block;
+}
+.feedback-form__field-contacts .feedback-form__input-picture{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.feedback-form__field-contacts .feedback-form__subscribe-input{
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 11px;
+}
+
+.feedback-form__subscribe-input{
+  margin-right: 13px;
+}
+.feedback-form__field-review{
+  border: none;
+}
+.feedback-form__field-review .feedback-form__label{
+  flex-wrap: wrap;
+}
+.feedback-form__field-review .feedback-form__title{
+  margin: 10px auto;
+}
+.feedback-form__field-advantages{
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback-form__field-advantages .feedback-form__title{
+  flex-basis: 100%;
+}
+.feedback-form__field-advantages .feedback-form__label{
+  flex-basis: 280px;
+}
+.feedback-form__subscribe{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+.feedback-form__checkbox{
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+.feedback-form__radio{
+  width: 55px;
+  height: 55px;
+  margin-bottom: 13px;
+}
+.feedback-form__comment-wrap{
+  display: block;
+  flex-basis: 100%;
+  box-sizing: border-box;
+}
+.feedback-form__comment-wrap .feedback-form__comment{
+  box-sizing: border-box;
+  min-width: 100%;
+  max-width: 100%;
+}
+.feedback-form__button{
+  margin-top: 50px;
 }
 @media (min-width: $tablet-width){
   .feedback-form__form{
@@ -33,10 +117,19 @@ $desktop-width: 1200px;
   }
   .feedback-form__field-impression{
     order: 1;
-    flex-basis: 50%;
+    flex-basis: 46%;
+    margin-left: 0;
   }
   .feedback-form__field-name{
     order: 2;
+    margin-right: 0;
+    flex-basis: 46%;
+  }
+  .feedback-form__field-name .feedback-form__title{
+    text-align: left;
+  }
+  .feedback-form__field-impression .feedback-form__title{
+    text-align: left;
   }
   .feedback-form__field-contacts{
     order: 3;
@@ -44,7 +137,11 @@ $desktop-width: 1200px;
   }
   .feedback-form__field-advantages{
     order: 4;
-    flex-basis: 100%;
+    flex-basis: 70%;
+
+  }
+  .feedback-form__field-advantages .feedback-form__wrap{
+    flex-basis: 45%;
   }
   .feedback-form__field-review{
     order: 5;
@@ -53,6 +150,16 @@ $desktop-width: 1200px;
   .feedback-form__button{
     order: 6;
     flex-basis: 50%;
+  }
+
+}
+@media (min-width: $desktop-width){
+  .feedback-form__field-advantages{
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+  .feedback-form__field-advantages .feedback-form__wrap{
+    flex-basis: 21%;
   }
 
 }
