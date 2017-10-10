@@ -5,6 +5,7 @@ $font-color: #ffffff;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 .main-nav {
+  position: relative;
   background-color: $nav-bg;
   color: #ffffff;
   font:{
@@ -14,6 +15,7 @@ $desktop-width: 1200px;
   }
   line-height: 40px;
 }
+
 .main-nav__list{
   margin: 0;
   padding: 0;
@@ -58,6 +60,44 @@ $desktop-width: 1200px;
   width: 32px;
   bottom: 10px;
   right: 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+}
+.main-nav--closed .main-nav__toggle::before{
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 4px;
+  width: 23px;
+  height: 3px;
+  border-top: 1px solid #c0d9e8;
+  border-bottom: 1px solid #c0d9e8;
+  background-color: $nav-bg;
+  box-shadow: 0 8px 0 0 $nav-bg, 0 -8px 0 0 $nav-bg;
+}
+.main-nav--opend .main-nav__toggle {
+  top: 10px;
+  left: auto;
+  right: 16px;
+  background-color: $nav-bg;
+  &:before,
+  &:after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    width: 28px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+  &::before{
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  &:after{
+    transform: rotate(-45deg);
+  }
 }
 @media (min-width: $tablet-width) {
   .main-nav__list{
