@@ -180,7 +180,7 @@ $desktop-width: 1200px;
   .feedback-form__field-advantages .feedback-form__wrap{
     flex-basis: 45%;
   }
-  .feedback-form__column{
+  .feedback-form__field-advantages .feedback-form__column{
     display: flex;
     margin: 0 auto;
     flex-basis: 70%;
@@ -214,6 +214,10 @@ $desktop-width: 1200px;
       right: 0;
     }
   }
+  .feedback-form__field-contacts .feedback-form__column{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .feedback-form__field-contacts .feedback-form__title,
   .feedback-form__field-advantages .feedback-form__title,
   .feedback-form__field-review .feedback-form__title{
@@ -233,7 +237,8 @@ $desktop-width: 1200px;
         }
       }
 
-      .feedback-form__column{
+      .feedback-form__field-contacts .feedback-form__column,
+      .feedback-form__field-advantages  .feedback-form__column{
         flex-basis: 100%;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -241,11 +246,7 @@ $desktop-width: 1200px;
       .feedback-form__field-advantages .feedback-form__wrap{
         flex-basis: 22%;
       }
-      .feedback-form__field-contacts .feedback-form__column{
-        display: flex;
-        flex-basis: 50%;
-        align-items: center;
-      }
+
       .feedback-form__field-contacts .feedback-form__label{
         display: flex;
         flex-wrap: nowrap;
