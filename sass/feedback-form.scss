@@ -104,19 +104,38 @@ $desktop-width: 1200px;
 .feedback-form__checkbox{
   cursor: pointer;
   position: relative;
-  width: 55px;
-  height: 55px;
+  width: 52px;
+  height: 52px;
 }
 .feedback-form__checkbox + .checkbox-indicator{
   position: absolute;
-  top: 6px;
-  left: 0;
-  height: 30px;
-  width: 30px;
+  height: 55px;
+  width: 55px;
   border: 2px solid #ffffff;
-  border-radius: 2px;
-  background-color: red;
+  border-radius: 10px;
+  background-color: #f2f2f2;
   cursor: pointer;
+}
+.feedback-form__checkbox:checked + .checkbox-indicator::before,
+.feedback-form__checkbox:checked + .checkbox-indicator::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #231f20;
+  border: 1px solid #8a8889;
+}
+.feedback-form__checkbox:checked + .checkbox-indicator::before{
+  width: 20px;
+  bottom: 26px;
+  right: 12px;
+  transform: rotate(-45deg);
+}
+.feedback-form__checkbox:checked + .checkbox-indicator::after{
+  width: 10px;
+  bottom: 24px;
+  left: 15px;
+  transform: rotate(45deg);
+  border-right: none;
 }
 .feedback-form__radio{
   width: 55px;
