@@ -39,6 +39,16 @@ $desktop-width: 1200px;
 .feedback-form__label{
   display: flex;
 }
+.feedback-form__input{
+  &:hover{
+    background-color: #e5e5e5;
+  }
+  &:focus{
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 4px #e5e5e5;
+    outline: none;
+  }
+}
 .feedback-form__field-name .feedback-form__label{
   margin-bottom: 20px;
   vertical-align: middle;
@@ -118,6 +128,12 @@ $desktop-width: 1200px;
   border-radius: 10px;
   background-color: #f2f2f2;
   cursor: pointer;
+  &:hover{
+    background-color: #e5e5e5;
+  }
+  &:active{
+    background-color: #d5d5d5;
+  }
 }
 .feedback-form__checkbox:checked + .checkbox-indicator::before,
 .feedback-form__checkbox:checked + .checkbox-indicator::after{
@@ -154,6 +170,12 @@ $desktop-width: 1200px;
   border-radius: 50%;
   background-color: #f2f2f2;
   cursor: pointer;
+  &:hover{
+    background-color: #e5e5e5;
+  }
+  &:active{
+    background-color: #d5d5d5;
+  }
 }
 .feedback-form__radio:checked + .checkbox-indicator::before{
   content: '';
