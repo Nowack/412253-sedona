@@ -39,6 +39,15 @@ $desktop-width: 1200px;
 }
 .page-footer__logo-path{
   fill: #000000;
+  :hover{
+    fill: #81b3d2;
+  }
+}
+.page-footer__copiright-link:hover .page-footer__logo-path{
+  fill: #81b3d2;
+}
+.page-footer__copiright-link:active .page-footer__logo-path{
+  fill: #b2b2b2;
 }
 @media (min-width: $tablet-width){
   .page-footer{
