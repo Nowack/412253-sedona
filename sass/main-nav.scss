@@ -1,6 +1,12 @@
 $nav-bg: #81b3d2;
-$border-bottom: #678fa8;
+$nav-bg-hover: #669ec0;
+$nav-bg-down: #5496bd;
 $border-top: #9ac2db;
+$border-top-hover: #9bc2db;
+$border-top-active: #86b2cd;
+$border-bottom: #678fa8;
+$border-bottom-hover: #cccccc;
+$border-bottom-active: #cccccc;
 $font-color: #ffffff;
 $tablet-width: 768px;
 $desktop-width: 1200px;
@@ -25,7 +31,16 @@ $desktop-width: 1200px;
   margin: 0;
   padding: 0;
   text-align: center;
-
+  &:hover{
+    background-color: $nav-bg-hover;
+    border-top-color: $border-top-hover;
+    border-bottom-color: $border-bottom-hover;
+  }
+  &:active{
+    background-color: $nav-bg-down;
+    border-top-color: $border-top-active;
+    border-bottom-color: $border-bottom-active;
+  }
   border:{
     bottom: 1px solid $border-bottom;
     top: 1px solid $border-top;
@@ -50,6 +65,9 @@ $desktop-width: 1200px;
   text-decoration: none;
   width: 100%;
   color: $font-color;
+  &:active{
+    color: rgba(225, 225, 225, 0.3);
+  }
 }
 .site-list-right .site-list__item:nth-child(2){
   border-bottom: none;
@@ -111,6 +129,10 @@ $desktop-width: 1200px;
   .site-list__item{
     margin-left: 0;
     background-color: #ffffff;
+    &:hover{
+      background-color: #ffffff;
+    }
+
     border: none;
     flex-basis: 50%;
   }
@@ -126,8 +148,20 @@ $desktop-width: 1200px;
   }
   .site-list__link{
     color: #000000;
+    &:hover{
+      color: #81b3d2;
+    }
+    &:active{
+      color: rgba(0, 0, 0, 0.3);
+    }
     font-size: 14px;
     line-height: 26px;
+  }
+  .site-list__link--active{
+    color: #766357;
+    &:hover{
+      color: #766357;
+    }
   }
   .main-nav__toggle{
     display: none;
