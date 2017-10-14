@@ -54,6 +54,10 @@ $desktop-width: 1200px;
   border: none;
   background-color: #ffffff;
   height: 56px;
+  &:hover,
+  &:active{
+    background-color: #ffffff;
+  }
 }
 .site-list__link{
   display: inline-block;
@@ -145,6 +149,9 @@ $desktop-width: 1200px;
     left: 50%;
     margin-left: -50px;
     background-color: transparent;
+    &:hover{
+      background-color: transparent;
+    }
   }
   .site-list__link{
     color: #000000;
@@ -165,5 +172,17 @@ $desktop-width: 1200px;
   }
   .main-nav__toggle{
     display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .site-list-logo{
+    height: 96px;
+    width: 188px;
+    margin-left: -94px;
+    background-color: $nav-bg;
+    &:hover,
+    &:active{
+      background-color: $nav-bg;
+    }
   }
 }
