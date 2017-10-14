@@ -1,4 +1,6 @@
-$navy: #81b3d2;
+$bg: #81b3d2;
+$bg-hover: #669ec0;
+$bg-active: #5496bd;
 
 .social-list{
   margin: 30px 0 ;
@@ -10,17 +12,24 @@ $navy: #81b3d2;
   display: inline-block;
   width: 46px;
   height: 48px;
-  background-color: $navy;
+  background-color: $bg;
+  &:hover{
+    background-color: $bg-hover;
+  }
+  &:active{
+    background-color: $bg-active;
+  }
   margin: 0;
   padding: 0;
   margin-right: 6px;
   &:last-child{
     margin-right: 0;
   }
+  cursor: pointer;
 }
 .social-link{
   text-decoration: none;
 }
 .social-link--faceboock{
-  
+
 }
