@@ -1,4 +1,7 @@
-$navy: #81b3d2;
+$bg: #81b3d2;
+$bg-hover: #669ec0;
+$bg-active: #5496bd;
+$bg-disabled: #e5e5e5;
 .button{
   text-decoration: none;
   border: none;
@@ -10,8 +13,18 @@ $navy: #81b3d2;
     top: 16px;
     bottom: 16px;
   }
-  background-color: $navy;
+  background-color: $bg;
   color: #ffffff;
+  &:hover{
+    background-color: $bg-hover;
+  }
+  &:active{
+    background-color: $bg-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled{
+    background-color: $bg-disabled;
+  }
   font:{
     family: 'PT Sans', sans-serif;
     size: 18px;
