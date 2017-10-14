@@ -1,16 +1,33 @@
 $tablet-width: 768px;
 $desktop-width: 1200px;
+.like{
+  padding-right: 6.3%;
+  padding-bottom: 20px;
+  padding-left: 6.3%;
+}
 .like-button{
-  height: 23px;
-  width: 23px;
+  height: 28px;
+  width: 28px;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 4px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+.like-svg path{
+  fill: #a9a9a9;
 }
 @media (min-width: $tablet-width){
   .like{
   position: absolute;
   bottom: 30px;
-  right: 30px;
+  right: 6.3%;
+  padding: 0;
+  }
+}
+@media (min-width: $desktop-width){
+  .like-svg path{
+    fill: #ffffff;
   }
 }
