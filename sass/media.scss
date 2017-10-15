@@ -10,10 +10,15 @@ $desktop-width: 1200px;
   }
   box-sizing: border-box;
 }
+
 .media__image-wrapp{
   display: flex;
   width: 100%;
   margin: 20px auto 0 auto;
+}
+.media__image-img{
+  max-width: 100%;
+  height: auto;
 }
 .media__wrapp{
   padding-top: 20px;
@@ -58,8 +63,7 @@ $desktop-width: 1200px;
 
   .media__image{
     margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     box-sizing: border-box;
   }
   .media__wrapp{
