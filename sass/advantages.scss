@@ -58,8 +58,12 @@ $retina-dppx: 1.5dppx;
   position: absolute;
   height: 40px;
   width: 40px;
-  border: 1px solid red; //временно
   left: 20px;
+}
+.advantages__icon{
+  height: 40px;
+  width: 40px;
+  fill: #81b3d2;
 }
 .advantages__title{
   font-size: 21px;
@@ -141,8 +145,12 @@ $retina-dppx: 1.5dppx;
     left: 0;
     height: 80px;
     border: none;
-  }
 
+  }
+  .advantages__icon{
+    width: 75px;
+    height: 75px;
+  }
   .advantages__image-1{
     background-image: url(../img/main-city-tablet@1x.jpg);
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
