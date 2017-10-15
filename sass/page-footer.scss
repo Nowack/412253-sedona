@@ -33,20 +33,19 @@ $desktop-width: 1200px;
 }
 
 .page-footer__logo {
-  height: 30px;
   display: inline-block;
   vertical-align: bottom;
 }
-.page-footer__logo-path{
+.page-footer__htmlacademy-logo{
   fill: #000000;
   :hover{
     fill: #81b3d2;
   }
 }
-.page-footer__copiright-link:hover .page-footer__logo-path{
+.page-footer__copiright-link:hover .page-footer__htmlacademy-logo{
   fill: #81b3d2;
 }
-.page-footer__copiright-link:active .page-footer__logo-path{
+.page-footer__copiright-link:active .page-footer__htmlacademy-logo{
   fill: #b2b2b2;
 }
 @media (min-width: $tablet-width){
