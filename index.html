@@ -66,7 +66,7 @@
                 <span class="advantages__number">№1</span>
                 <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <div class="advantages__image"></div>
+              <div class="advantages__image advantages__image-1"></div>
             </div>
             <ul class="advantages__detail-list">
               <li class="advantages__detail-item">
@@ -86,7 +86,7 @@
               <li class="advantages__detail-item">
                 <span class="advantages__image-wrapp">
                   <img src="img/icon-burger.svg" alt="">
-                </span> 
+                </span>
                 <h4 class="advantages__detail-title">Еда</h4>
                 <p class="advantages__detail-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
@@ -99,7 +99,7 @@
               <span class="advantages__number">№2</span>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantages__image"></div>
+            <div class="advantages__image advantages__image-2"></div>
           </li>
           <li class="advantages__item advantages__item-shortly">
             <div class="advantages__item-shortly-wrap">
@@ -138,7 +138,11 @@
       </section>
 
       <section class="map">
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="Седона на карте" width="320px" height="350px">
+        <picture class="media__image">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Седона на карте">
+        </picture>
       </section>
 
     </main>
