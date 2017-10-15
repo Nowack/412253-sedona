@@ -58,9 +58,7 @@ $desktop-width: 1200px;
   }
   .media__image-wrapp{
     margin: 0 auto;
-
   }
-
   .media__image{
     margin: 0 auto;
     width: 100%;
@@ -78,13 +76,16 @@ $desktop-width: 1200px;
     align-items: center;
   }
   .media__image-wrapp-big{
-
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
+  }
+  .media__video-wrapp{
+    height: 500px;
   }
   .media__video{
     width: 100%;
   }
+
   .media__description{
     margin: 0;
   }
