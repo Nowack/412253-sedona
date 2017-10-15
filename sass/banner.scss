@@ -12,6 +12,10 @@ $retina-dppx: 1.5dppx;
     repeat: no-repeat;
     size: cover;
   }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: 768px auto;
+  }
 }
 @media (min-width: $tablet-width){
   .banner{
