@@ -5,6 +5,8 @@ $shortly-head: #eeeeee;
 $border-color: #d6d6d6;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 .advantages__title,
 .advantages__detail-title{
   font-size: 18px;
@@ -94,10 +96,27 @@ $desktop-width: 1200px;
   height: 260px;
   background:{
     color: #d39c81;
-    image: url(../img/main-bridge-mobile@1x.jpg);
     position: top center;
     repeat: no-repeat;
     size: cover;
+  }
+}
+.advantages__image-1{
+  background-image: url(../img/main-city-mobile@1x.jpg);
+}
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+  .advantages__image-1{
+    background-image: url(../img/main-city-mobile@2x.jpg);
+    background-size: 320px auto;
+  }
+}
+.advantages__image-2{
+  background-image: url(../img/main-bridge-mobile@1x.jpg);
+}
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+  .advantages__image-2{
+    background-image: url(../img/main-bridge-mobile@2x.jpg);
+    background-size: 320px auto;
   }
 }
 @media (min-width: $tablet-width){
@@ -125,6 +144,25 @@ $desktop-width: 1200px;
     left: 0;
     height: 80px;
     border: none;
+  }
+
+  .advantages__image-1{
+    background-image: url(../img/main-city-tablet@1x.jpg);
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    .advantages__image-1{
+      background-image: url(../img/main-city-tablet@2x.jpg);
+      background-size: 512px auto;
+    }
+  }
+  .advantages__image-2{
+    background-image: url(../img/main-bridge-tablet@1x.jpg);
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    .advantages__image-2{
+      background-image: url(../img/main-bridge-tablet@2x.jpg);
+      background-size: 512px auto;
+    }
   }
   .advantages__detail-title{
     font-size: 21px;
@@ -154,7 +192,22 @@ $desktop-width: 1200px;
   .advantages__detail-item{
 
   }
-  .advantages__image{
-    background-image: url(../img/big-photo-bridge@1x.jpg);
+  .advantages__image-1{
+    background-image: url(../img/main-city-desktop@1x.jpg);
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    .advantages__image-1{
+      background-image: url(../img/main-city-desktop@2x.jpg);
+      background-size: 768px auto;
+    }
+  }
+  .advantages__image-2{
+    background-image: url(../img/main-bridge-desktop@1x.jpg);
+  }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    .advantages__image-2{
+      background-image: url(../img/main-bridge-desktop@2x.jpg);
+      background-size: 768px auto;
+    }
   }
 }
