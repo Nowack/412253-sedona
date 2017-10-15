@@ -8,6 +8,7 @@ $bg-active: #5496bd;
 
 }
 .social-item{
+  position: relative;
   list-style: none;
   display: inline-block;
   width: 46px;
@@ -30,6 +31,14 @@ $bg-active: #5496bd;
 .social-link{
   text-decoration: none;
 }
-.social-link--faceboock{
+.social-link__image{
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
 
+.social-link:active .social-link__image{
+  fill: rgba(255, 255, 255, 0.3);
 }
