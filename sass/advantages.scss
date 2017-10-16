@@ -7,6 +7,9 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+.advantages{
+  margin-bottom: 20px;
+}
 .advantages__title,
 .advantages__detail-title{
   font-size: 18px;
@@ -190,8 +193,8 @@ $retina-dppx: 1.5dppx;
 }
 
 @media (min-width: $desktop-width){
-  .advantages__detail-item{
-
+  .advantages{
+    margin-bottom: 40px;
   }
   .advantages__image-1{
     background-image: url(../img/main-city-desktop@1x.jpg);
