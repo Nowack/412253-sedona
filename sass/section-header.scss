@@ -11,10 +11,11 @@ $desktop-width: 1200px;
     left: 20px;
   }
 }
+.section-header-media{
+  text-align: center;
+}
 .section-header__title{
-  font:{
-    size: 18px;
-  }
+  font-size: 18px;
 }
 .section-header__description{
   line-height: 26px;
@@ -28,6 +29,13 @@ $desktop-width: 1200px;
       right: auto;
     }
   }
+  .section-header__title{
+    font-size: 30px;
+  }
+  .page-main .section-header__title{
+    font-size: 21px;
+  }
+  
   .section-header-media{
     width: 430px;
   }
