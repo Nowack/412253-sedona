@@ -1,5 +1,12 @@
 $tablet-width: 768px;
 $desktop-width: 1200px;
+.feedback-form{
+  position: relative;
+}
+.feedback-form__caption{
+  text-align: center;
+  font-size: 18px;
+}
 .feedback-form__description{
   text-align: center;
 }
@@ -68,17 +75,27 @@ $desktop-width: 1200px;
   width: 100%;
   box-sizing: border-box;
 }
-.feedback-form__phone{
+.feedback-form__input-picture{
+  display: flex;
+  flex-basis: 100%;
+}
+.feedback-form__phone-icon{
   background-color: #e6e6e6;
+  flex-shrink: 0;
+  height: 58px;
+  width: 58px;
   background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: center;
 }
-.feedback-form__email{
+.feedback-form__email-icon{
   background-color: #e6e6e6;
+  flex-shrink: 0;
+  height: 58px;
+  width: 58px;
   background-image: url(../img/icon-mail.svg);
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: center;
 }
 .feedback-form__field-contacts .feedback-form__subscribe-input{
   display: inline-block;
@@ -201,7 +218,16 @@ $desktop-width: 1200px;
 .feedback-form__button{
   margin-top: 50px;
 }
+.feedback-form__footnote{
+  display: none;
+}
 @media (min-width: $tablet-width){
+  .feedback-form__caption{
+    font-size: 30px;
+  }
+  .feedback-form__title{
+    font-size: 21px;
+  }
   .feedback-form__form{
     display: flex;
     flex-wrap: wrap;
@@ -221,6 +247,14 @@ $desktop-width: 1200px;
     flex-basis: 42%;
     margin-left: 8%;
   }
+  .feedback-form__footnote{
+    display: block;
+    order: 6;
+    height: 38px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
   .feedback-form__field-name .feedback-form__title{
     text-align: left;
   }
@@ -229,11 +263,10 @@ $desktop-width: 1200px;
   }
   .feedback-form__field-contacts{
     order: 3;
-    flex-basis: 100%;
   }
+
   .feedback-form__field-contacts .feedback-form__label{
     display: flex;
-    flex-basis: 100%;
   }
   .feedback-form__field-contacts .feedback-form__subscribe-input,
   .feedback-form__field-contacts .feedback-form__input{
@@ -292,45 +325,46 @@ $desktop-width: 1200px;
   }
 }
 @media (min-width: $desktop-width){
-        .feedback-form__field-advantages{
-          flex-basis: 100%;
-
-        .feedback-form__title-wrapp{
-          &::before,
-          &::after{
-            width: 30%;
-          }
-        }
-      }
-
-      .feedback-form__field-contacts .feedback-form__column,
-      .feedback-form__field-advantages  .feedback-form__column{
-        flex-basis: 100%;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-      }
-
-      .feedback-form__field-advantages .feedback-form__wrap{
-        flex-basis: 22%;
-      }
-      .feedback-form__field-contacts .feedback-form__wrap{
-        flex-basis: 100%;
-
-      }
-      .feedback-form__field-contacts .feedback-form__label{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-basis: 50%;
-      }
-      .feedback-form__field-contacts .feedback-form__label-phone{
-        flex-basis: 41%;
-        margin-right: 9%;
-      }
-      .feedback-form__field-contacts .feedback-form__subscribe{
-        flex-shrink: 0;
-      }
-      .feedback-form__field-contacts .feedback-form__input{
-        flex-grow: 1;
-      }
-
+  .feedback-form__caption{
+    font-size: 30px;
   }
+  .feedback-form__field-advantages{
+    flex-basis: 100%;
+
+  .feedback-form__title-wrapp{
+    &::before,
+    &::after{
+      width: 30%;
+    }
+  }
+}
+
+  .feedback-form__field-contacts .feedback-form__column,
+  .feedback-form__field-advantages  .feedback-form__column{
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .feedback-form__field-advantages .feedback-form__wrap{
+    flex-basis: 22%;
+  }
+  .feedback-form__field-contacts .feedback-form__wrap{
+    flex-basis: 100%;
+  }
+  .feedback-form__field-contacts .feedback-form__label{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+  }
+  .feedback-form__field-contacts .feedback-form__label-phone{
+    flex-basis: 41%;
+    margin-right: 9%;
+  }
+  .feedback-form__field-contacts .feedback-form__subscribe{
+    flex-shrink: 0;
+  }
+  .feedback-form__field-contacts .feedback-form__input{
+    flex-grow: 1;
+  }
+}
