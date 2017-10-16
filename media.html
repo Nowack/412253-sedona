@@ -30,8 +30,12 @@
                 <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/12">HTML academy</a>
               </li>
               <li class="site-list__item site-list-logo">
-                <a class="page-header__logo-link" href="index.html">
-                  <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102px" height="83px" alt="Логотип Седона">
+                <a class="page-header__logo-link">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                    <img src="img/logo-sedona-mobile.svg"  alt="Логотип Седона">
+                  </picture>
                 </a>
               </li>
             </ul>
@@ -40,7 +44,7 @@
         </nav>
       </header>
 
-      <main class="page-main page-inner">
+      <main class="page-inner">
         <h1 class="visually-hidden">Фото и видео</h1>
 
         <section class="banner">
@@ -71,14 +75,8 @@
                     </div>
                     <div class="like">
                       <button class="like-button" type="button" name="button-like">
-                        <svg class="like-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                          <g id="Page-1">
-                            <g id="Core" transform="translate(-295.000000, -464.000000)">
-                              <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                                <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                              </g>
-                            </g>
-                          </g>
+                        <svg class="like-icon">
+                          <use xlink:href="sprite.svg#icon-like"></use>
                         </svg>
                         <span class="visually-hidden">Мне нравится!</span>
                       </button>
@@ -104,14 +102,8 @@
                   </div>
                   <div class="like">
                     <button class="like-button" type="button" name="button-like">
-                      <svg class="like-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                        <g id="Page-1">
-                          <g id="Core" transform="translate(-295.000000, -464.000000)">
-                            <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                              <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                            </g>
-                          </g>
-                        </g>
+                      <svg class="like-icon">
+                        <use xlink:href="sprite.svg#icon-like"></use>
                       </svg>
                       <span class="visually-hidden">Мне нравится!</span>
                     </button>
@@ -137,14 +129,8 @@
                   </div>
                   <div class="like">
                     <button class="like-button" type="button" name="button-like">
-                      <svg class="like-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                        <g id="Page-1">
-                          <g id="Core" transform="translate(-295.000000, -464.000000)">
-                            <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                              <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                            </g>
-                          </g>
-                        </g>
+                      <svg class="like-icon">
+                        <use xlink:href="sprite.svg#icon-like"></use>
                       </svg>
                       <span class="visually-hidden">Мне нравится!</span>
                     </button>
@@ -170,14 +156,8 @@
                   </div>
                   <div class="like">
                     <button class="like-button" type="button" name="button-like">
-                      <svg class="like-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                        <g id="Page-1">
-                          <g id="Core" transform="translate(-295.000000, -464.000000)">
-                            <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                              <path id="Shape" fill="#000000" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
-                            </g>
-                          </g>
-                        </g>
+                      <svg class="like-icon">
+                        <use xlink:href="sprite.svg#icon-like"></use>
                       </svg>
                       <span class="visually-hidden">Мне нравится!</span>
                     </button>
@@ -208,34 +188,43 @@
       </main>
 
       <footer class="page-footer">
-        <div class="page-footer__hashtags">
-            <a class="page-footer__hashtag-link" href="#">#visitsedona</a>
+        <div class="page-footer__hashtags page-footer__item">
+          <a class="page-footer__hashtag-link" href="#">#visitsedona</a>
         </div>
 
-        <div class="page-footer__social social">
+        <div class="page-footer__social page-footer__item social">
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link social-link--twitter" href="#">
+                <svg class="social-link__image">
+                  <use xlink:href="sprite.svg#icon-twitter"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link--faceboock" href="#">
+                <svg class="social-link__image">
+                  <use xlink:href="sprite.svg#icon-facebook"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Фэйсбуке</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link--yuotube" href="#">
+                <svg class="social-link__image">
+                  <use xlink:href="sprite.svg#icon-youtube"></use>
+                </svg>
                 <span class="visually-hidden">Мы на Ютуб</span>
               </a>
             </li>
           </ul>
         </div>
 
-        <div class="page-footer__copiright">
+        <div class="page-footer__copiright page-footer__item">
           <a class="page-footer__copiright-link" href="https://up.htmlacademy.ru/adaptive/12">Разработано
-            <svg  class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-              <path class="page-footer__logo-path" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            <svg class="page-footer__logo" width="30" height="30">
+              <use xlink:href="sprite.svg#icon-htmlacademy-logo"></use>
             </svg>
           </a>
         </div>
