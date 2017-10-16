@@ -15,7 +15,7 @@ $desktop-width: 1200px;
   cursor: pointer;
   background: transparent;
 }
-.like-svg path{
+.like-icon path{
   fill: #a9a9a9;
 }
 @media (min-width: $tablet-width){
@@ -27,7 +27,7 @@ $desktop-width: 1200px;
   }
 }
 @media (min-width: $desktop-width){
-  .like-svg path{
+  .like-icon path{
     fill: #ffffff;
   }
 }
