@@ -2,28 +2,16 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 .page-header{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   position: relative;
 }
-.page-header__logo-link{
-  margin: 0 auto;
-  margin-bottom: -35px;
-}
-@media (min-width: $tablet-width){
-  .page-header{
-    flex-direction: column;
-  }
-  .page-header__logo-link{
-    position: relative;
-    z-index: 1;
-    margin-top: 0;
-    margin-bottom: -70px;
-    width: 186px;
-    display: flex;
-    justify-content: center;
-    line-height: 0;
-  }
-  .page-header__logo-image{
 
+@media (min-width: $tablet-width){
+  .main-nav__wrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
   }
+  
+
 }

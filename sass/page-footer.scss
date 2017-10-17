@@ -31,13 +31,19 @@ $desktop-width: 1200px;
 .page-footer__hashtag-link{
   font-weight: 700;
 }
+
 .page-footer__logo {
-  height: 30px;
   display: inline-block;
   vertical-align: bottom;
 }
-.page-footer__logo-path{
+.page-footer__htmlacademy-logo{
   fill: #000000;
+}
+.page-footer__copiright-link:hover .page-footer__logo path{
+  fill: #81b3d2;
+}
+.page-footer__copiright-link:active .page-footer__logo path{
+  fill: #b2b2b2;
 }
 @media (min-width: $tablet-width){
   .page-footer{

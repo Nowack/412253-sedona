@@ -9,31 +9,42 @@
   <body class="page-body">
     <div class="page-body__container">
       <header class="page-header">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102px" height="83px" alt="Логотип Седона">
-        </a>
+
         <nav class="main-nav">
+
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+
+            <ul class="main-nav__list site-list site-list-left">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Фото и видео</a>
+                <a class="site-list__link site-list__link--active">Фото и видео</a>
               </li>
+            </ul>
+            <ul class="main-nav__list site-list site-list-right">
               <li class="site-list__item">
                 <a class="site-list__link" href="feedback-form.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/12">HTML academy</a>
               </li>
+              <li class="site-list__item site-list-logo">
+                <a class="page-header__logo-link">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                    <img src="img/logo-sedona-mobile.svg"  alt="Логотип Седона">
+                  </picture>
+                </a>
+              </li>
             </ul>
-            <button class="main-nav__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-nav__toggle main-nav__toggle-open" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
         </nav>
       </header>
 
-      <main class="page-main">
+      <main class="page-inner">
         <h1 class="visually-hidden">Фото и видео</h1>
 
         <section class="banner">
@@ -48,14 +59,25 @@
             </header>
             <div class="media__photo-item-wrapp">
               <div class="media__photo-item media__big-photo">
-                <img class="media__photo" src="img/photo-sunset-mobile@1x.jpg" alt="Фото1" width="280px" height="280px">
-                <div class="media__description-wrap">
+                <div class="media__description-wrapp ">
                     <div class="media__description">
-                      <h3 class="media__title">Неродные просторы</h3>
-                      <span class="media__author">Автор фото: Борис</span>
+                      <div class="media__image-wrapp media__image-wrapp-big">
+                        <picture class="media__image">
+                          <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                          <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                          <img class="media__image-img"src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                        </picture>
+                      </div>
+                      <div class="media__wrapp">
+                        <h3 class="media__title">Неродные просторы</h3>
+                        <span class="media__author">Автор фото: Борис</span>
+                      </div>
                     </div>
                     <div class="like">
                       <button class="like-button" type="button" name="button-like">
+                        <svg class="like-icon">
+                          <use xlink:href="sprite.svg#icon-like"></use>
+                        </svg>
                         <span class="visually-hidden">Мне нравится!</span>
                       </button>
                       <span class="like__count">1350</span>
@@ -64,14 +86,25 @@
               </div>
 
               <div class="media__photo-item">
-                <img class="media__photo" src="img/photo-cactus-mobile@1x.jpg" alt="Фото1" width="280px" height="280px">
-                <div class="media__description-wrap">
+                <div class="media__description-wrapp">
                   <div class="media__description">
-                    <h3 class="media__title">Местная растительность</h3>
-                    <span class="media__author">Автор фото: Сергей</span>
+                    <div class="media__image-wrapp">
+                      <picture class="media__image">
+                        <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                        <img class="media__image-img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg  2x" alt="Местная растительность">
+                      </picture>
+                    </div>
+                    <div class="media__wrapp">
+                      <h3 class="media__title">Местная растительность</h3>
+                      <span class="media__author">Автор фото: Сергей</span>
+                    </div>
                   </div>
                   <div class="like">
                     <button class="like-button" type="button" name="button-like">
+                      <svg class="like-icon">
+                        <use xlink:href="sprite.svg#icon-like"></use>
+                      </svg>
                       <span class="visually-hidden">Мне нравится!</span>
                     </button>
                     <span class="like__count">143</span>
@@ -80,14 +113,25 @@
               </div>
 
               <div class="media__photo-item">
-                <img class="media__photo" src="img/photo-roads-mobile@1x.jpg" alt="Фото1" width="280px" height="280px">
-                <div class="media__description-wrap">
+                <div class="media__description-wrapp">
                   <div class="media__description">
-                    <h3 class="media__title">Дорога на север</h3>
-                    <span class="media__author">Автор фото: Пётр</span>
+                    <div class="media__image-wrapp">
+                      <picture class="media__image">
+                        <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                        <img class="media__image-img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg  2x" alt="Дорога на север">
+                      </picture>
+                    </div>
+                    <div class="media__wrapp">
+                      <h3 class="media__title">Дорога на север</h3>
+                      <span class="media__author">Автор фото: Пётр</span>
+                    </div>
                   </div>
                   <div class="like">
                     <button class="like-button" type="button" name="button-like">
+                      <svg class="like-icon">
+                        <use xlink:href="sprite.svg#icon-like"></use>
+                      </svg>
                       <span class="visually-hidden">Мне нравится!</span>
                     </button>
                     <span class="like__count">96</span>
@@ -96,14 +140,25 @@
               </div>
 
               <div class="media__photo-item">
-                <img class="media__photo" src="img/photo-bridge-mobile@1x.jpg" alt="Фото1" width="280px" height="280px">
-                <div class="media__description-wrap">
+                <div class="media__description-wrapp">
                   <div class="media__description">
-                    <h3 class="media__title">Мост Дьявола</h3>
-                    <span class="media__author">Автор фото: Антон</span>
+                    <div class="media__image-wrapp">
+                      <picture class="media__image">
+                        <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                        <img class="media__image-img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg  2x" alt="Мост Дьявола">
+                      </picture>
+                    </div>
+                    <div class="media__wrapp">
+                      <h3 class="media__title">Мост Дьявола</h3>
+                      <span class="media__author">Автор фото: Антон</span>
+                    </div>
                   </div>
                   <div class="like">
                     <button class="like-button" type="button" name="button-like">
+                      <svg class="like-icon">
+                        <use xlink:href="sprite.svg#icon-like"></use>
+                      </svg>
                       <span class="visually-hidden">Мне нравится!</span>
                     </button>
                     <span class="like__count">254</span>
@@ -115,46 +170,61 @@
 
           <section class="media__video-list">
             <header class="section-header section-header-media">
-              <h2 class="media__caption">Всё ещё сомневаетесь?</h2>
-              <p class="media__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <h2 class="section-header__title">Всё ещё сомневаетесь?</h2>
+              <p class="section-header__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </header>
             <div class="media__video">
+              <div class="media__video-wrapp">
+                <picture class="media__image">
+                  <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img class="media__image-img"src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о городке Седона">
+                </picture>
+              </div>
               <h3 class="visually-hidden">Видео о городке Седона</h3>
-              <img class="media__video" src="img/video-mobile@1x.jpg" alt="видео" width="280px" height="280px">
             </div>
           </section>
         </div>
       </main>
 
       <footer class="page-footer">
-        <div class="page-footer__hashtags">
-            <a class="page-footer__hashtag-link" href="#">#visitsedona</a>
+        <div class="page-footer__hashtags page-footer__item">
+          <a class="page-footer__hashtag-link" href="#">#visitsedona</a>
         </div>
 
-        <div class="page-footer__social social">
+        <div class="page-footer__social page-footer__item social">
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link social-link--twitter" href="#">
+                <svg class="social-link__image">
+                  <use xlink:href="sprite.svg#icon-twitter"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link--faceboock" href="#">
+                <svg class="social-link__image">
+                  <use xlink:href="sprite.svg#icon-facebook"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Фэйсбуке</span>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link--yuotube" href="#">
+                <svg class="social-link__image">
+                  <use xlink:href="sprite.svg#icon-youtube"></use>
+                </svg>
                 <span class="visually-hidden">Мы на Ютуб</span>
               </a>
             </li>
           </ul>
         </div>
 
-        <div class="page-footer__copiright">
+        <div class="page-footer__copiright page-footer__item">
           <a class="page-footer__copiright-link" href="https://up.htmlacademy.ru/adaptive/12">Разработано
-            <svg  class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-              <path class="page-footer__logo-path" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            <svg class="page-footer__logo" width="30" height="30">
+              <use xlink:href="sprite.svg#icon-htmlacademy-logo"></use>
             </svg>
           </a>
         </div>

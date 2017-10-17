@@ -5,6 +5,11 @@ $shortly-head: #eeeeee;
 $border-color: #d6d6d6;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+.advantages{
+  margin-bottom: 20px;
+}
 .advantages__title,
 .advantages__detail-title{
   font-size: 18px;
@@ -18,6 +23,7 @@ $desktop-width: 1200px;
 .advantages__item,
 .advantages__detail-item{
   list-style: none;
+  position: relative;
 }
 .advantages__item{
   margin: 0;
@@ -51,6 +57,17 @@ $desktop-width: 1200px;
     border: none;
   }
 }
+.advantages__image-wrapp{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 20px;
+}
+.advantages__icon{
+  height: 40px;
+  width: 40px;
+  fill: #81b3d2;
+}
 .advantages__title{
   font-size: 21px;
 }
@@ -64,10 +81,10 @@ $desktop-width: 1200px;
 }
 .advantages__detail-item{
   padding:{
-    top: 13px;
+    top: 15px;
     right: 25px;
     bottom: 13px;
-    left: 50px;
+    left: 80px;
   }
 }
 .advantages__detail-title{
@@ -86,12 +103,26 @@ $desktop-width: 1200px;
   height: 260px;
   background:{
     color: #d39c81;
-    image: url(../img/main-bridge-mobile@1x.jpg);
     position: top center;
     repeat: no-repeat;
     size: cover;
   }
 }
+.advantages__image-1{
+  background-image: url(../img/main-city-mobile@1x.jpg);
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    background-image: url(../img/main-city-mobile@2x.jpg);
+    background-size: 320px auto;
+  }
+}
+.advantages__image-2{
+  background-image: url(../img/main-bridge-mobile@1x.jpg);
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    background-image: url(../img/main-bridge-mobile@2x.jpg);
+    background-size: 320px auto;
+  }
+}
+
 @media (min-width: $tablet-width){
   .advantages__list{
     display: flex;
@@ -104,11 +135,37 @@ $desktop-width: 1200px;
   }
   .advantages__detail-item{
     flex-basis: 33,3%;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-left: 3%;
     padding-right: 3%;
+    padding-bottom: 60px;
     &:nth-child(2){
       order: 3;
+    }
+  }
+  .advantages__image-wrapp{
+    position: relative;
+    left: 0;
+    height: 80px;
+    border: none;
+
+  }
+  .advantages__icon{
+    width: 75px;
+    height: 75px;
+  }
+  .advantages__image-1{
+    background-image: url(../img/main-city-tablet@1x.jpg);
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url(../img/main-city-tablet@2x.jpg);
+      background-size: 512px auto;
+    }
+  }
+  .advantages__image-2{
+    background-image: url(../img/main-bridge-tablet@1x.jpg);
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url(../img/main-bridge-tablet@2x.jpg);
+      background-size: 512px auto;
     }
   }
   .advantages__detail-title{
@@ -136,10 +193,21 @@ $desktop-width: 1200px;
 }
 
 @media (min-width: $desktop-width){
-  .advantages__detail-item{
-
+  .advantages{
+    margin-bottom: 40px;
   }
-  .advantages__image{
-    background-image: url(../img/big-photo-bridge@1x.jpg);
+  .advantages__image-1{
+    background-image: url(../img/main-city-desktop@1x.jpg);
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url(../img/main-city-desktop@2x.jpg);
+      background-size: 768px auto;
+    }
+  }
+  .advantages__image-2{
+    background-image: url(../img/main-bridge-desktop@1x.jpg);
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url(../img/main-bridge-desktop@2x.jpg);
+      background-size: 768px auto;
+    }
   }
 }

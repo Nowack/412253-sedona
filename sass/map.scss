@@ -1,5 +1,12 @@
 .map {
   background-color: #cadfaa;
-  height: 350px;
   width: 100%;
+  height: auto;
+  box-sizing: border-box;
+
+}
+.map__image{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
