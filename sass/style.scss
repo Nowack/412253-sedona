@@ -1,18 +1,24 @@
-@import "../css/mormalize_min.css";
-@import "visually-hidden.scss";
-@import "button.scss";
 @import "page-body.scss";
-@import "page-header.scss";
-@import "main-nav.scss";
-@import "banner.scss";
-@import "advantages.scss";
-@import "page-main.scss";
-@import "find-hotel.scss";
-@import "map.scss";
-@import "page-footer.scss";
-@import "social.scss";
-@import "section-header.scss";
-@import "media.scss";
-@import "like.scss";
-@import "popup.scss";
-@import "feedback-form.scss";
+
+@import "header/page-header.scss";
+@import "header/main-nav.scss";
+
+@import "main/page-main.scss";
+@import "main/banner.scss";
+@import "main/section-header.scss";
+
+@import "footer/page-footer.scss";
+@import "footer/social.scss";
+
+@import "index-page/advantages.scss";
+@import "index-page/find-hotel.scss";
+@import "index-page/map.scss";
+
+@import "photo-page/media.scss";
+@import "photo-page/like.scss";
+
+@import "feedback-page/feedback-form.scss";
+@import "feedback-page/popup.scss";
+
+@import "common-elements/button.scss";
+@import "common-elements/visually-hidden.scss";

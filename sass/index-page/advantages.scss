@@ -83,6 +83,7 @@ $retina-dppx: 1.5dppx;
   height: 40px;
   width: 40px;
   left: 20px;
+  top: 4px;
 }
 .advantages__icon{
   height: 40px;
@@ -125,16 +126,16 @@ $retina-dppx: 1.5dppx;
   }
 }
 .advantages__image-1{
-  background-image: url(../img/main-city-mobile@1x.jpg);
+  background-image: url(../img/index/main-city-mobile@1x.jpg);
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-    background-image: url(../img/main-city-mobile@2x.jpg);
+    background-image: url(../img/index/main-city-mobile@2x.jpg);
     background-size: 320px auto;
   }
 }
 .advantages__image-2{
-  background-image: url(../img/main-bridge-mobile@1x.jpg);
+  background-image: url(../img/index/main-bridge-mobile@1x.jpg);
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-    background-image: url(../img/main-bridge-mobile@2x.jpg);
+    background-image: url(../img/index/main-bridge-mobile@2x.jpg);
     background-size: 320px auto;
   }
 }
@@ -206,20 +207,20 @@ $retina-dppx: 1.5dppx;
     border: none;
   }
   .advantages__icon{
-    width: 75px;
+    width: 140px;
     height: 75px;
   }
   .advantages__image-1{
-    background-image: url(../img/main-city-tablet@1x.jpg);
+    background-image: url(../img/index/main-city-tablet@1x.jpg);
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url(../img/main-city-tablet@2x.jpg);
+      background-image: url(../img/index/main-city-tablet@2x.jpg);
       background-size: 512px auto;
     }
   }
   .advantages__image-2{
-    background-image: url(../img/main-bridge-tablet@1x.jpg);
+    background-image: url(../img/index/main-bridge-tablet@1x.jpg);
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url(../img/main-bridge-tablet@2x.jpg);
+      background-image: url(../img/index/main-bridge-tablet@2x.jpg);
       background-size: 512px auto;
     }
   }
@@ -270,16 +271,16 @@ $retina-dppx: 1.5dppx;
     margin-right: 25%;
   }
   .advantages__image-1{
-    background-image: url(../img/main-city-desktop@1x.jpg);
+    background-image: url(../img/index/main-city-desktop@1x.jpg);
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url(../img/main-city-desktop@2x.jpg);
+      background-image: url(../img/index/main-city-desktop@2x.jpg);
       background-size: 768px auto;
     }
   }
   .advantages__image-2{
-    background-image: url(../img/main-bridge-desktop@1x.jpg);
+    background-image: url(../img/index/main-bridge-desktop@1x.jpg);
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url(../img/main-bridge-desktop@2x.jpg);
+      background-image: url(../img/index/main-bridge-desktop@2x.jpg);
       background-size: 768px auto;
     }
   }
