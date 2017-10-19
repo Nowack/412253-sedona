@@ -2,6 +2,7 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 .feedback-form{
   position: relative;
+  margin-bottom: 50px;
 }
 .feedback-form__caption{
   text-align: center;
@@ -21,8 +22,8 @@ $desktop-width: 1200px;
   font-size: 18px;
 }
 .feedback-form__field-name .feedback-form__title{
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .feedback-form__field-contacts .feedback-form__title{
   margin-top: 0;
@@ -264,11 +265,18 @@ $desktop-width: 1200px;
 .feedback-form__comment-wrap .feedback-form__comment{
   box-sizing: border-box;
   min-width: 100%;
-  max-width: 100%;
-  text-align: left;
-  padding-bottom: 35px;
-  margin-bottom: 25px;
+  max-width: 240px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  height: 160px;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
+
 .feedback-form__field-review{
   padding-left: 20px;
   padding-right: 20px;
@@ -334,11 +342,15 @@ $desktop-width: 1200px;
     flex-basis: 41%;
     margin-left: 9%;
   }
-  .feedback-form__comment{
+  .feedback-form__comment-wrap .feedback-form__comment{
     margin-top: 10px;
+    max-width: 648px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
   }
   .feedback-form__field-review{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .feedback-form__field-button{
     margin-top: 0;
@@ -498,5 +510,8 @@ $desktop-width: 1200px;
   }
   .feedback-form__footnote{
     right: 120px;
+  }
+  .feedback-form__comment{
+    max-width: 960px;
   }
 }
