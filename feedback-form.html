@@ -48,7 +48,7 @@
     <main class="page-feedback page-inner">
       <h1 class="visually-hidden">Форма для отзыва</h1>
 
-      <section class="banner">
+      <section class="banner banner--inner-page banner--feedback-page">
       </section>
 
       <section class="feedback-form">
@@ -91,7 +91,7 @@
             <div class="feedback-form__column">
               <div class="feedback-form__wrap">
                 <label class="feedback-form__label feedback-form__label-phone">
-                  <span class="feedback-form__subscribe feedback-form__subscribe-input">Контактный телефон*:</span>
+                  <span class="feedback-form__subscribe feedback-form__subscribe-input"><span class="feedback-form__hidden">Контактный</span> телефон*:</span>
                   <span class="feedback-form__input-picture">
                     <input class="feedback-form__item feedback-form__input feedback-form__phone" type="tel" name="telephone" placeholder="Введите телефон">
                     <span class="feedback-form__phone-icon"></span>
@@ -174,7 +174,7 @@
             <div class="feedback-form__wrap">
               <label class="feedback-form__label">
                 <div class="feedback-form__title-wrapp">
-                  <span class="feedback-form__title">Опишите свои эмоции</span>
+                  <span class="feedback-form__title">Опишите свои эмоции:</span>
                 </div>
                 <div class="feedback-form__comment-wrap">
                   <textarea class="feedback-form__comment" name="name" rows="8" cols="30" placeholder="Опишите подробно свои восторги">
@@ -183,8 +183,10 @@
               </label>
             </div>
           </div>
+          <div class="feedback-form__field-button">
+            <button type="submit" class="button button--feedback-form" name="feedback-button">Отправить отзыв</button>
+          </div>
 
-          <button type="submit" class="button feedback-form__button" name="feedback-button">Отправить отзыв</button>
           <span class="feedback-form__footnote">* - обязательные поля</span>
 
           <div class="feedback-form__popup feedback-form__popup-false">
