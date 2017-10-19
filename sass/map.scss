@@ -1,12 +1,19 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
 .map {
   background-color: #cadfaa;
   width: 100%;
   height: auto;
   box-sizing: border-box;
-
+  margin-bottom: 20px;
 }
 .map__image{
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+@media (min-width: $tablet-width){
+  .map{
+    margin-bottom: 0;
+  }
 }
