@@ -80,7 +80,7 @@ $desktop-width: 1200px;
     outline: none;
   }
 }
- .feedback-form__column{
+.feedback-form__column{
   padding-top: 10px;
 }
 
@@ -200,7 +200,7 @@ $desktop-width: 1200px;
   &:active{
     background-color: #d5d5d5;
   }
-    margin-top: 5px;
+  margin-top: 5px;
 }
 .feedback-form__checkbox:checked + .checkbox-indicator::before,
 .feedback-form__checkbox:checked + .checkbox-indicator::after{
@@ -275,6 +275,7 @@ $desktop-width: 1200px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  font: inherit;
 }
 
 .feedback-form__field-review{
@@ -469,13 +470,13 @@ $desktop-width: 1200px;
   .feedback-form__field-advantages{
     flex-basis: 100%;
 
-  .feedback-form__title-wrapp{
-    &::before,
-    &::after{
-      width: 30%;
+    .feedback-form__title-wrapp{
+      &::before,
+      &::after{
+        width: 30%;
+      }
     }
   }
-}
 
   .feedback-form__field-contacts .feedback-form__column,
   .feedback-form__field-advantages  .feedback-form__column{
