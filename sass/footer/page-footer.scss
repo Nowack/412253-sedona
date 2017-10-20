@@ -30,11 +30,15 @@ $desktop-width: 1200px;
 }
 .page-footer__hashtag-link{
   font-weight: 700;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .page-footer__logo {
   display: inline-block;
   vertical-align: bottom;
+  margin-top: 10px;
+  font-size: 21px;
 }
 .page-footer__htmlacademy-logo{
   fill: #000000;
@@ -49,19 +53,24 @@ $desktop-width: 1200px;
   .page-footer{
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 0;
   }
   .page-footer__item{
     flex-basis: 190px;
     display: flex;
     &:nth-child(1){
-    justify-content: flex-start;
-    }
-    &:nth-child(2){
-    justify-content: center;
+    margin-left: 35px;
+    margin-right: auto;
     }
     &:nth-child(3){
-    justify-content: flex-end;
+      margin-left: auto;
     }
+  }
+  .page-footer__copiright{
+    margin-right: 0;
+    align-items: center;
+    margin-top: -15px;
+    margin-right: -20px;
   }
 }
 @media (min-width: $desktop-width){
@@ -69,5 +78,9 @@ $desktop-width: 1200px;
     &:nth-child(1){
       justify-content: center;
     }
+  }
+  .page-footer{
+    padding-top: 10px;
+
   }
 }

@@ -3,10 +3,12 @@ $desktop-width: 1200px;
 .find-hotel{
   width: 100%;
   margin: 0;
+
+  margin-bottom: 37px;
   padding:{
-    top: 20px;
+    top: 5px;
     right: 0;
-    bottom: 50px;
+    bottom: 10px;
     left: 0;
   }
 }
@@ -17,13 +19,23 @@ $desktop-width: 1200px;
   font-size: 21px;
   line-height: 26px;
 }
+.find-hotel__description{
+  padding-bottom: 20px;
+}
 @media (min-width: $tablet-width){
   .find-hotel{
     width: 460px;
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
     padding-bottom: 65px;
+  }
+  .find-hotel-wrap{
+    padding: 0;
   }
   .find-hotel__title{
     font-size: 30px;
+  }
+  .find-hotel__description{
+    margin-top: 25px;
+    margin-bottom: 18px;
   }
 }
