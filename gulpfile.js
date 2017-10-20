@@ -26,6 +26,7 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
+    .pipe()
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
@@ -101,5 +102,5 @@ gulp.task("serve", function() {
 
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html", ["html"];
+  gulp.watch("*.html", ["html"]);
 });
