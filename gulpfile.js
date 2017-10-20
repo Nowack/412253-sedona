@@ -26,7 +26,6 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe()
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
@@ -66,15 +65,16 @@ gulp.task("webp", function () {
 
 
 
-gulp.task("copy", function () {
+gulp.task("copy", function() {
   return gulp.src([
-    "fonts/**/*.{woff,woff2}",
-    "img/**",
-    "js/**"
-  ], {
-    base: "."
-  })
-    pipe(gulp.dest("build"));
+      "fonts/**/*.{woff,woff2}",
+      "img/**",
+      "js/**",
+      "*.html"
+    ], {
+      base: "."
+    })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function(){
