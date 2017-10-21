@@ -71,13 +71,13 @@
                   <div class="feedback-form__wrap">
                     <label class="feedback-form__label">
                       <span class="feedback-form__subscribe feedback-form__subscribe-input">Имя*:</span>
-                      <input class="feedback-form__item feedback-form__input" type="text" name="your-name" placeholder="Пётр">
+                      <input class="feedback-form__item feedback-form__input" type="text" name="your-name" placeholder="Пётр" required>
                     </label>
                   </div>
                   <div class="feedback-form__wrap">
                     <label class="feedback-form__label">
                       <span class="feedback-form__subscribe feedback-form__subscribe-input">Фамилия*:</span>
-                      <input class="feedback-form__item feedback-form__input" type="text" name="surname" placeholder="Иванов">
+                      <input class="feedback-form__item feedback-form__input" type="text" name="surname" placeholder="Иванов" required>
                     </label>
                   </div>
                   <div class="feedback-form__wrap">
@@ -98,7 +98,7 @@
                     <label class="feedback-form__label feedback-form__label-phone">
                       <span class="feedback-form__subscribe feedback-form__subscribe-input"><span class="feedback-form__hidden">Контактный</span> телефон*:</span>
                       <span class="feedback-form__input-picture">
-                        <input class="feedback-form__item feedback-form__input feedback-form__phone" type="tel" name="telephone" placeholder="Введите телефон">
+                        <input class="feedback-form__item feedback-form__input feedback-form__phone" type="tel" name="telephone" placeholder="Введите телефон" required>
                         <span class="feedback-form__phone-icon"></span>
                       </span>
                     </label>
@@ -107,7 +107,7 @@
                     <label class="feedback-form__label">
                       <span class="feedback-form__subscribe feedback-form__subscribe-input">Электронная почта*:</span>
                       <span class="feedback-form__input-picture">
-                        <input class="feedback-form__item feedback-form__input feedback-form__input-picture feedback-form__email" type="email" name="email" placeholder="Введите e-mail">
+                        <input class="feedback-form__item feedback-form__input feedback-form__input-picture feedback-form__email" type="email" name="email" placeholder="Введите e-mail" required>
                         <span class="feedback-form__email-icon"></span>
                       </span>
                     </label>
@@ -187,25 +187,33 @@
                 </div>
               </div>
               <div class="feedback-form__field-button">
-                <button type="submit" class="button button--feedback-form" name="feedback-button">Отправить отзыв</button>
+                <button type="submit" class="button feedback-button button--feedback-form" name="feedback-button">Отправить отзыв</button>
               </div>
 
               <span class="feedback-form__footnote">* - обязательные поля</span>
 
-              <div class="feedback-form__popup feedback-form__popup-false">
-                <h2 class="feedback-form__caption">Что-то пошло не так!</h2>
-                <p class="feedback-form__description">
-                  Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-                </p>
-                <button class="button popup-button" type="button" name="close-button">Ок</button>
+              <div class="modal modal__false">
+                <div class="modal__background"></div>
+                <div class="modal__wrapper">
+                  <h2 class="modal__caption">Что-то пошло не так!</h2>
+                  <p class="modal__description">
+                    Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+                  </p>
+                  <button class="button" type="button" name="modal-close">Ок</button>
+                </div>
               </div>
-              <div class="feedback-form__popup feedback-form__popup-true">
-                <h2 class="feedback-form__caption">Ваш отзыв отправлен!</h2>
-                <p class="feedback-form__description">
-                  Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-                </p>
-                <button class="button popup-button" type="button" name="close-button">Закрыть окно</button>
+
+              <div class="modal modal__true">
+                <div class="modal__background"></div>
+                <div class="modal__wrapper">
+                  <h2 class="modal__caption">Ваш отзыв отправлен!</h2>
+                  <p class="modal__description">
+                    Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+                  </p>
+                  <button class="button" type="button" name="modal-close">Закрыть окно</button>
+                </div>
               </div>
+
             </form>
 
           </section>
@@ -258,6 +266,7 @@
       document.createElement( "picture" );
       </script>
       <script src="js/picturefill.js" async></script>
+      <script src="js/modal.js" async></script>
     </body>
 
     </html>
