@@ -40,13 +40,13 @@ $desktop-width: 1200px;
   margin-top: 10px;
   font-size: 21px;
 }
-.page-footer__htmlacademy-logo{
+.page-footer__logo{
   fill: #000000;
 }
-.page-footer__copiright-link:hover .page-footer__logo path{
+.page-footer__copiright-link:hover .page-footer__logo{
   fill: #81b3d2;
 }
-.page-footer__copiright-link:active .page-footer__logo path{
+.page-footer__copiright-link:active .page-footer__logo{
   fill: #b2b2b2;
 }
 @media (min-width: $tablet-width){

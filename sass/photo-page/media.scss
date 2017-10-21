@@ -63,6 +63,7 @@ $desktop-width: 1200px;
   position: absolute;
   top: -45px;
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 .media__scroll-bar{
   height: 5px;
@@ -71,6 +72,7 @@ $desktop-width: 1200px;
   position: absolute;
   top: 21px;
   left: 7%;
+  z-index: 2;
 }
 .media__scroll-bar-toggle{
   height: 9px;
@@ -83,6 +85,7 @@ $desktop-width: 1200px;
   cursor: pointer;
 }
 .media__video-button{
+  position: relative;
   border: none;
   display: inline-block;
   vertical-align: middle;
@@ -92,7 +95,7 @@ $desktop-width: 1200px;
   background-position: top center;
   background-color: transparent;
   cursor: pointer;
-
+  z-index: 4;
   &:hover > .video-icon{
     fill: #333333;
   }
@@ -195,11 +198,16 @@ $desktop-width: 1200px;
   .icon-video-replay{
     margin-left: 34px;
     margin-right: auto;
+
+  }
+  .media__video-button{
+    fill: rgba(255, 255, 255, 1);
   }
   .icon-video-subtitles{
     margin-right: 37px;
     width: 24px;
     height: 20px;
+
   }
   .icon-video-fullscreen{
     margin-right: 40px;
