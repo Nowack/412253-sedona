@@ -152,6 +152,8 @@ $desktop-width: 1200px;
   }
   .media__wrapp{
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 18px;
     padding-left: 20px;
     padding-right: 20px;

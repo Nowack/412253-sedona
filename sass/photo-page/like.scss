@@ -23,10 +23,9 @@ $desktop-width: 1200px;
 
 @media (min-width: $tablet-width){
   .like{
-    position: absolute;
-    bottom: 30px;
-    right: 6.3%;
     padding: 0;
+    padding-top: 15px;
+    padding-right: 10px;
   }
 }
 @media (min-width: $desktop-width){
