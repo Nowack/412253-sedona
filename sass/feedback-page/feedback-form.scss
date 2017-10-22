@@ -33,7 +33,7 @@ $desktop-width: 1200px;
   margin-top: 0;
   margin-bottom: 10px;
 }
-.feedback-form__field-advantages .feedback-form__title{
+.feedback-form__field--advantages .feedback-form__title{
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -54,7 +54,7 @@ $desktop-width: 1200px;
   align-items: center;
 }
 
-.feedback-form__subscribe-input{
+.feedback-form__subscribe--input{
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -144,43 +144,43 @@ $desktop-width: 1200px;
   background-repeat: no-repeat;
   background-position: center;
 }
-.feedback-form__field-contacts .feedback-form__subscribe-input{
+.feedback-form__field-contacts .feedback-form__subscribe--input{
   display: inline-block;
   vertical-align: middle;
 }
 
-.feedback-form__subscribe-input{
+.feedback-form__subscribe--input{
   margin-right: 13px;
 }
-.feedback-form__field-review{
+.feedback-form__field--review{
   border: none;
 }
-.feedback-form__field-review .feedback-form__label{
+.feedback-form__field--review .feedback-form__label{
   flex-wrap: wrap;
 }
-.feedback-form__field-review .feedback-form__title{
+.feedback-form__field--review .feedback-form__title{
   margin: 10px auto;
 }
-.feedback-form__field-advantages{
+.feedback-form__field--advantages{
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 8px;
 }
 
-.feedback-form__field-advantages .feedback-form__label{
+.feedback-form__field--advantages .feedback-form__label{
   flex-basis: 280px;
   display: flex;
   margin-bottom: 13px;
 }
 .feedback-form__field-impression .feedback-form__subscribe,
-.feedback-form__field-advantages .feedback-form__subscribe{
+.feedback-form__field--advantages .feedback-form__subscribe{
   margin-top: 22px;
   margin-bottom: 20px;
   margin-left: 80px;
   text-transform: none;
   font-size: 18px;
 }
-.feedback-form__field-advantages{
+.feedback-form__field--advantages{
   margin-bottom: 17px;
 }
 .feedback-form__field-button{
@@ -285,11 +285,11 @@ $desktop-width: 1200px;
   font: inherit;
 }
 
-.feedback-form__field-review{
+.feedback-form__field--review{
   padding-left: 20px;
   padding-right: 20px;
 }
-.feedback-form__field-review .feedback-form__title{
+.feedback-form__field--review .feedback-form__title{
   margin: 0 auto 15px auto;
 }
 .feedback-form__field-button{
@@ -357,7 +357,7 @@ $desktop-width: 1200px;
     padding-left: 15px;
     padding-bottom: 15px;
   }
-  .feedback-form__field-review{
+  .feedback-form__field--review{
     margin-bottom: 50px;
   }
   .feedback-form__field-button{
@@ -380,29 +380,29 @@ $desktop-width: 1200px;
   .feedback-form__field-contacts .feedback-form__label{
     display: flex;
   }
-  .feedback-form__field-contacts .feedback-form__subscribe-input,
+  .feedback-form__field-contacts .feedback-form__subscribe--input,
   .feedback-form__field-contacts .feedback-form__input{
     flex-grow: 1;
   }
   .feedback-form__field-contacts .feedback-form__title-wrapp{
     margin-bottom: 0;
   }
-  .feedback-form__field-contacts .feedback-form__subscribe-input{
+  .feedback-form__field-contacts .feedback-form__subscribe--input{
     padding-left: 22px;
     font-size: 14px;
   }
   .feedback-form__label-phone{
     margin-bottom: 10px;
   }
-  .feedback-form__field-advantages{
+  .feedback-form__field--advantages{
     order: 4;
     width: 100%;
     margin-bottom: 20px;
   }
-  .feedback-form__field-advantages .feedback-form__wrap{
+  .feedback-form__field--advantages .feedback-form__wrap{
     flex-basis: 45%;
   }
-  .feedback-form__field-advantages .feedback-form__column{
+  .feedback-form__field--advantages .feedback-form__column{
     display: flex;
     margin: 0 auto;
     flex-basis: 70%;
@@ -410,7 +410,7 @@ $desktop-width: 1200px;
     padding-top: 0;
     justify-content: space-between;
   }
-  .feedback-form__field-review{
+  .feedback-form__field--review{
     order: 5;
     flex-basis: 100%;
   }
@@ -443,8 +443,8 @@ $desktop-width: 1200px;
     flex-wrap: wrap;
   }
   .feedback-form__field-contacts .feedback-form__title,
-  .feedback-form__field-advantages .feedback-form__title,
-  .feedback-form__field-review .feedback-form__title{
+  .feedback-form__field--advantages .feedback-form__title,
+  .feedback-form__field--review .feedback-form__title{
     width: 290px;
     margin: 15px auto;
   }
@@ -462,7 +462,7 @@ $desktop-width: 1200px;
   .feedback-form__field-contacts{
     padding-bottom: 5px;
   }
-  .feedback-form__field-contacts .feedback-form__subscribe-input{
+  .feedback-form__field-contacts .feedback-form__subscribe--input{
     padding-left: 0;
   }
   .feedback-form__field-contacts .feedback-form__label{
@@ -474,7 +474,7 @@ $desktop-width: 1200px;
   .feedback-form__caption{
     font-size: 30px;
   }
-  .feedback-form__field-advantages{
+  .feedback-form__field--advantages{
     flex-basis: 100%;
 
     .feedback-form__title-wrapp{
@@ -486,13 +486,13 @@ $desktop-width: 1200px;
   }
 
   .feedback-form__field-contacts .feedback-form__column,
-  .feedback-form__field-advantages  .feedback-form__column{
+  .feedback-form__field--advantages  .feedback-form__column{
     flex-basis: 100%;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
 
-  .feedback-form__field-advantages .feedback-form__wrap{
+  .feedback-form__field--advantages .feedback-form__wrap{
     flex-basis: 22%;
   }
   .feedback-form__field-contacts .feedback-form__wrap{

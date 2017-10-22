@@ -73,7 +73,7 @@ $desktop-width: 1200px;
     color: rgba(225, 225, 225, 0.3);
   }
 }
-.site-list-right .site-list__item:nth-child(2){
+.site-list--right .site-list__item:nth-child(2){
   border-bottom: none;
 }
 .main-nav__toggle{
@@ -144,7 +144,7 @@ $desktop-width: 1200px;
     border: none;
     flex-basis: 50%;
   }
-  .site-list-right{
+  .site-list--right{
     margin-left: auto;
   }
   .site-list-logo{
