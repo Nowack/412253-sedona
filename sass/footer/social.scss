@@ -1,7 +1,7 @@
 $bg: #81b3d2;
 $bg-hover: #669ec0;
 $bg-active: #5496bd;
-
+$tablet-width: 768px;
 .social-list{
   margin: 30px 0 ;
   padding: 0;
@@ -50,8 +50,14 @@ $bg-active: #5496bd;
   width: 20px;
   height: 14px;
 }
-
-
 .social-link:active .social-link__image{
   fill: rgba(255, 255, 255, 0.3);
+}
+@media (min-width: $tablet-width){
+
+}
+@media (min-width: $desktop-width){
+  .social{
+    flex-basis: 200px;
+  }
 }

@@ -15,19 +15,21 @@ $desktop-width: 1200px;
   cursor: pointer;
   background: transparent;
 }
-.like-icon path{
+.like-icon {
+  width: 22px;
+  height: 20px;
   fill: #a9a9a9;
 }
+
 @media (min-width: $tablet-width){
   .like{
-  position: absolute;
-  bottom: 30px;
-  right: 6.3%;
-  padding: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-right: 10px;
   }
 }
 @media (min-width: $desktop-width){
-  .like-icon path{
+  .like-icon{
     fill: #ffffff;
   }
 }
