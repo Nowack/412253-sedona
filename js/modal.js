@@ -1,18 +1,26 @@
-var link = document.querySelector(".feedback__button");
-var popup = document.querySelector(".modal__true");
-var popupFalse = document.querySelector(".modal__false");
-var close = document.querySelector(".modal__close");
+var form = document.querySelector(".feedback-form__form");
+var popup = document.querySelector(".modal");
+var popupTrue = document.querySelector(".modal--true");
+var popupFalse = document.querySelector(".modal--false");
+var closeTrue = document.querySelector(".modal--close-true");
+var closeFalse = document.querySelector(".modal--false-false");
 
-link.addEventListener("click", function(evt){
+form.addEventListener("submit", function(evt){
   evt.preventDefault();
-  popup.classList.add("modal__show");
+  popupTrue.classList.add("modal--show");
 });
-close.addEventListener("click", function(evt){
+
+closeTrue.addEventListener("click", function(evt){
   evt.preventDefault();
-  popup.classList.remove("modal__show");
+  popupTrue.classList.remove("modal--show");
 });
+closeFalse.addEventListener("click", function(evt){
+  evt.preventDefault();
+  popupFalse.classList.remove("modal--show");
+});
+
 window.addEventListener("keydown", function(evt){
-  if (evt.keyCode === 27 && popup.classList.contains("modal__show")){
-    popup.classList.remove("modal__show");
+  if (evt.keyCode === 27 && popup.classList.contains("modal--show")){
+    popup.classList.remove("modal--show");
   }
 });

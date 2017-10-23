@@ -7,50 +7,50 @@
 * Firefox's early picture implementation (prior to FF41) is static and does
 * not react to viewport changes. This tiny module fixes this.
 */
-(function(window) {
+(function(window){
  /*jshint eqnull:true */
  var ua = navigator.userAgent;
 
- if ( window.HTMLPictureElement && ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 < 45) ) {
-   addEventListener("resize", (function() {
+ if ( window.HTMLPictureElement && ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 < 45)){
+   addEventListener("resize", (function(){
      var timer;
 
      var dummySrc = document.createElement("source");
 
-     var fixRespimg = function(img) {
+     var fixRespimg = function(img){
        var source, sizes;
        var picture = img.parentNode;
 
-       if (picture.nodeName.toUpperCase() === "PICTURE") {
+       if (picture.nodeName.toUpperCase() === "PICTURE"){
          source = dummySrc.cloneNode();
 
          picture.insertBefore(source, picture.firstElementChild);
-         setTimeout(function() {
+         setTimeout(function(){
            picture.removeChild(source);
          });
-       } else if (!img._pfLastSize || img.offsetWidth > img._pfLastSize) {
+       } else if (!img._pfLastSize || img.offsetWidth > img._pfLastSize){
          img._pfLastSize = img.offsetWidth;
          sizes = img.sizes;
          img.sizes += ",100vw";
-         setTimeout(function() {
+         setTimeout(function(){
            img.sizes = sizes;
          });
        }
      };
 
-     var findPictureImgs = function() {
+     var findPictureImgs = function(){
        var i;
        var imgs = document.querySelectorAll("picture > img, img[srcset][sizes]");
-       for (i = 0; i < imgs.length; i++) {
+       for (i = 0; i < imgs.length; i++){
          fixRespimg(imgs[i]);
        }
      };
-     var onResize = function() {
+     var onResize = function(){
        clearTimeout(timer);
        timer = setTimeout(findPictureImgs, 99);
      };
      var mq = window.matchMedia && matchMedia("(orientation: landscape)");
-     var init = function() {
+     var init = function(){
        onResize();
 
        if (mq && mq.addListener) {
