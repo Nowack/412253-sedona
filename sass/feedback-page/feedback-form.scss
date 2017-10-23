@@ -209,9 +209,11 @@ $desktop-width: 1200px;
   }
   margin-top: 5px;
 }
-.feedback-form__label:hover ~ .feedback-form__checkbox + .checkbox-indicator{
-
+.feedback-form__label:hover > .feedback-form__checkbox + .checkbox-indicator{
     background-color: #e5e5e5;
+}
+.feedback-form__label:active > .feedback-form__checkbox + .checkbox-indicator{
+    background-color: #d5d5d5;
 }
 .feedback-form__checkbox:checked + .checkbox-indicator::before,
 .feedback-form__checkbox:checked + .checkbox-indicator::after{
