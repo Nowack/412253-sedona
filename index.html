@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-body">
     <div style="display: none">
@@ -30,18 +30,19 @@
                 <a class="site-list__link" href="feedback-form.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/12">HTML academy</a>
-              </li>
-              <li class="site-list__item site-list-logo">
-                <a class="page-header__logo-link">
-                  <picture>
-                    <source media="(min-width: 1200px)" srcset="img/logo/logo-sedona-desktop.svg">
-                    <source media="(min-width: 768px)" srcset="img/logo/logo-sedona-tablet.svg">
-                    <img src="img/logo/logo-sedona-mobile.svg"  alt="Логотип Седона">
-                  </picture>
-                </a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
               </li>
             </ul>
+            <div class="site-list__item site-list__logo">
+              <a class="page-header__logo-link">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo/logo-sedona-tablet.svg">
+                  <img src="img/logo/logo-sedona-mobile.svg"  alt="Логотип Седона">
+                </picture>
+              </a>
+            </div>
+            <button class="main-nav__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
         </nav>
       </header>
@@ -145,15 +146,17 @@
             <b class="find-hotel__title">Заинтересовались?</b>
             <p class="find-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
-          <a class="button find-hotel__button" href="#">Найти гостинницу</a>
+          <a class="button find-hotel__button" href="hotel.html" target="_blank">Найти гостинницу</a>
         </section>
         <section class="map">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/index/bg-map-desktop@1x.jpg 1x, img/index/bg-map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/index/bg-map-tablet@1x.jpg 1x, img/index/bg-map-tablet@2x.jpg 2x">
-            <img class="map__image" src="img/index/bg-map-mobile@1x.jpg" srcset="img/index/bg-map-mobile@2x.jpg 2x" alt="Седона на карте">
-          </picture>
+            <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1939142.731209972!2d-112.59843401013705!3d34.75249365247154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1508778645494" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index/bg-map-desktop@1x.jpg 1x, img/index/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index/bg-map-tablet@1x.jpg 1x, img/index/bg-map-tablet@2x.jpg 2x">
+              <img class="map__image" src="img/index/bg-map-mobile@1x.jpg" srcset="img/index/bg-map-mobile@2x.jpg 2x" alt="Седона на карте">
+            </picture>
         </section>
+
       </main>
       <footer class="page-footer">
         <div class="page-footer__item">
@@ -188,7 +191,7 @@
           </ul>
         </div>
         <div class="page-footer__item">
-          <a class="page-footer__copiright-link" href="https://up.htmlacademy.ru/adaptive/12">Разработано
+          <a class="page-footer__copiright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
             <svg class="page-footer__logo" width="30" height="30">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
