@@ -10,11 +10,8 @@ $bg-disabled: #e5e5e5;
   vertical-align: middle;
   text-align: center;
   width: 100%;
-  padding:{
-    top: 16px;
-    bottom: 16px;
-  }
-
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: $bg;
   color: #ffffff;
   &:hover{
@@ -28,7 +25,6 @@ $bg-disabled: #e5e5e5;
     background-color: $bg-disabled;
   }
   font:{
-    family: 'PT Sans', sans-serif;
     size: 21px;
     line-height: 26px;
     weight: 700;

@@ -1,15 +1,37 @@
 $main-bg: #ffffff;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+@font-face{
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face{
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face{
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
 .page-body{
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background:{
-    color: $main-bg;
-  }
+  background-color: $main-bg;
   font:{
-    family: 'PT Sans', sans-serif;
+    family: "PT Sans","Mariad Pro", sans-serif;
     size: 14px;
     weight: 500;
     style: normal;
@@ -21,14 +43,14 @@ $desktop-width: 1200px;
   width: 320px;
   margin: 0 auto;
 }
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width){
   .page-body__container{
     width: 768px;
     margin: 0 auto;
     padding: 0 60px;
   }
 }
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-width){
   .page-body{
     margin: 0 auto;
   }

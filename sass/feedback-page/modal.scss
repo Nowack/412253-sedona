@@ -1,13 +1,13 @@
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
-.modal__false{
+.modal--false{
   display: none;
 }
-.modal__true{
+.modal--true{
   display: none;
 }
-.modal__show{
+.modal--show{
   display: block;
 }
 
@@ -22,7 +22,7 @@ $desktop-width: 1200px;
 .modal{
   text-align: center;
 }
-.modal__background {
+.modal__background{
   position: fixed;
   top: 0;
   left: 0;

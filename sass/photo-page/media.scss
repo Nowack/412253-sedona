@@ -1,7 +1,7 @@
 $border-color: #e5e5e5;
 $tablet-width: 768px;
 $desktop-width: 1200px;
-.media__photo-item {
+.media__photo-item{
   margin: 0 auto;
   text-align: left;
   border-top: 1px solid $border-color;
@@ -10,7 +10,6 @@ $desktop-width: 1200px;
   }
   box-sizing: border-box;
 }
-
 .media__image-wrapp{
   display: flex;
   width: 100%;
@@ -27,7 +26,6 @@ $desktop-width: 1200px;
   padding-right: 6.3%;
   padding-left: 6.3%;
 }
-
 .media__title{
   margin: 0;
   font-size: 14px;
@@ -96,28 +94,23 @@ $desktop-width: 1200px;
   background-color: transparent;
   cursor: pointer;
   z-index: 4;
-  &:hover > .video-icon{
+  &:hover > .icon-video{
     fill: #333333;
   }
-  &:active > .video-icon{
+  &:active > .icon-video{
     fill: #c1c1c1;
   }
 }
-.video-icon{
-  fill: #5c6870;
-  height: 21px;
-  width: 34px;
-}
-.icon-video-replay{
+.media__video-button--replay{
   margin-left: 20px;
   margin-right: auto;
 }
-.icon-video-subtitles{
+.media__video-button--subtitles{
   margin-right: 37px;
   width: 24px;
   height: 20px;
 }
-.icon-video-fullscreen{
+.media__video-button--fullscreen{
   margin-right: 20px;
 }
 @media (min-width: $tablet-width){
@@ -181,7 +174,6 @@ $desktop-width: 1200px;
     height: 47px;
     background-color: transparent;
   }
-
   .media__scroll-bar-wrap{
     top: 0;
     height: 93px;
@@ -194,28 +186,23 @@ $desktop-width: 1200px;
   .media__scroll-bar-toggle{
     left: 113px;
   }
-  .video-icon{
-    fill: rgba(255, 255, 255, 1);
-  }
-  .icon-video-replay{
-    margin-left: 34px;
-    margin-right: auto;
-
-  }
   .media__video-button{
     fill: rgba(255, 255, 255, 1);
   }
-  .icon-video-subtitles{
+  .media__description{
+    margin: 0;
+  }
+  .media__video-button--replay{
+    margin-left: 34px;
+    margin-right: auto;
+  }
+  .media__video-button--subtitles{
     margin-right: 37px;
     width: 24px;
     height: 20px;
-
   }
-  .icon-video-fullscreen{
+  .media__video-button--fullscreen{
     margin-right: 40px;
-  }
-  .media__description{
-    margin: 0;
   }
 }
 @media (min-width: $desktop-width){
@@ -238,14 +225,12 @@ $desktop-width: 1200px;
     position: relative;
     z-index: 1;
   }
-
   .media__image-wrapp{
     width: 100%;
   }
   .media__scroll-bar{
     width: 540px;
   }
-
   .media__wrapp{
     position: absolute;
     bottom: 0;

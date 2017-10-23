@@ -7,13 +7,12 @@ $retina-dppx: 1.5dppx;
   height: 390px;
   width: 100%;
   margin-bottom: 20px;
-
+  background-color: #85acc9;
   background-image:
     url(../img/banner/text-sedona-index.svg),
     url(../img/banner/bg-intro-triangle-mobile.svg),
     url(../img/banner/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-
   background-position:
     center,
     bottom center,
@@ -29,6 +28,7 @@ $retina-dppx: 1.5dppx;
 }
 .banner--inner-page{
   height: 158px;
+  background-color: #58595b;
   background-image:
     url(../img/banner/text-sedona.svg),
     url(../img/banner/bg-intro-triangle-mobile.svg),
@@ -38,11 +38,12 @@ $retina-dppx: 1.5dppx;
     bottom center,
     center -100px;
   background-size:
-      230px auto,
-      cover,
-      cover;
+    230px auto,
+    cover,
+    cover;
 }
 .banner--feedback-page{
+  background-color: #58595b;
   margin-bottom: 0;
 }
 
@@ -79,9 +80,9 @@ $retina-dppx: 1.5dppx;
       center bottom,
       center -100px;
     background-size:
-        460px auto,
-        contain,
-        cover;
+      460px auto,
+      contain,
+      cover;
   }
   .banner--media{
     margin-bottom: 60px;
@@ -90,7 +91,6 @@ $retina-dppx: 1.5dppx;
 @media (min-width: $desktop-width){
   .banner{
     height: 520px;
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
       background-image: url(../img/banner/bg-back-desktop@2x.jpg);
       background-size: 1200px auto;

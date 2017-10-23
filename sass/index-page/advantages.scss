@@ -10,13 +10,19 @@ $retina-dppx: 1.5dppx;
 .advantages{
   margin-bottom: 20px;
 }
-.advantages__title,
+.advantages__title{
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
 .advantages__detail-title{
+  margin: 5px 0 18px 0;
   font-size: 18px;
   line-height: 26px;
 }
-.advantages__title{
-  margin-bottom: 5px;
+.advantages__item-detail-first .advantages__title{
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 .advantages__item-detail-first{
   background-image: url(../img/bg-triangle.svg);
@@ -24,10 +30,6 @@ $retina-dppx: 1.5dppx;
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-top: -20px;
-}
-.advantages__item-detail-first .advantages__title{
-  margin-top: 50px;
-  margin-bottom: 10px;
 }
 .advantages__list{
   margin: 0;
@@ -49,6 +51,7 @@ $retina-dppx: 1.5dppx;
 }
 .advantages__item{
   list-style: none;
+  margin: 0;
 }
 .advantages__detail-item{
   display: flex;
@@ -56,27 +59,14 @@ $retina-dppx: 1.5dppx;
   padding: 5px 25px 14px 0;
   line-height: 21px;
 }
-.advantages__item{
-  margin: 0;
-}
 .advantages__item-detail{
   background-color: $detail-head;
   color: $head-color;
   width: auto;
-  padding:{
-    top: 25px;
-    right: 25px;
-    bottom: 22px;
-    left: 25px;
-  }
+  padding: 25px 25px 22px 25px;
 }
 .advantages__item-shortly{
-  padding:{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
+  padding: 0;
   background-color: #eeeeee;
 }
 .advantages__item-shortly-wrap{
@@ -88,11 +78,7 @@ $retina-dppx: 1.5dppx;
 .advantages__item-shortly-wrap--last{
   border: none;
 }
-.advantages__image-wrapp{
-  height: 40px;
-  width: 40px;
-  margin-right: 10px;
-}
+
 .advantages__icon{
   height: 40px;
   width: 40px;
@@ -101,11 +87,14 @@ $retina-dppx: 1.5dppx;
 .advantages__description{
   line-height: 21px;
 }
-.advantages__detail-title{
-  margin: 5px 0 18px 0;
-}
+
 .advantages__detail-text{
   margin: 0;
+}
+.advantages__image-wrapp{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
 .advantages__image{
   width: 100%;
@@ -151,6 +140,13 @@ $retina-dppx: 1.5dppx;
       order: 3;
     }
   }
+  .advantages__detail-title{
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
+  .advantages__item-detail-first .advantages__detail-title{
+    margin-top: 0px;
+  }
   .advantages__image-wrapp{
     height: 80px;
     width: 100%;
@@ -158,10 +154,6 @@ $retina-dppx: 1.5dppx;
     margin: 0;
     align-self: center;
     padding-bottom: 20px;
-  }
-  .advantages__detail-title{
-    font-size: 21px;
-    margin-bottom: 23px;
   }
   .advantages__item-detail{
     width: 40%;
@@ -178,9 +170,7 @@ $retina-dppx: 1.5dppx;
     font-size: 21px;
     padding-top: 15px;
   }
-  .advantages__item-detail-first .advantages__detail-title{
-    margin-top: 0px;
-  }
+
   .advantages__item-shortly-column{
     display: flex;
     margin: 0;
@@ -205,6 +195,9 @@ $retina-dppx: 1.5dppx;
   .advantages__icon{
     width: 140px;
     height: 75px;
+  }
+  .advantages__image{
+    width: 33,3%;
   }
   .advantages__image-1{
     background-image: url(../img/index/main-city-tablet@1x.jpg);
@@ -233,9 +226,6 @@ $retina-dppx: 1.5dppx;
     flex-direction: row-reverse;
   }
 
-  .advantages__image{
-    width: 33,3%;
-  }
 }
 
 @media (min-width: $desktop-width){
