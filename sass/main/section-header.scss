@@ -6,36 +6,54 @@ $desktop-width: 1200px;
   margin: 0;
   padding: 20px 8% 20px 8%;
 }
-.section-header--form{
-  padding-left: 6%;
-  padding-right: 6%;
-  padding-bottom: 3px;
-  line-height: 24px;
-  border-bottom: 1px solid #e5e5e5;
-}
+
 .section-header__title{
   font-size: 18px;
-}
-.section-header--media{
-  text-align: center;
-}
-.section-header--index{
-  padding-bottom: 0;
-}
-.section-header__title--media{
-  margin-bottom: 25px;
 }
 .section-header__description{
   line-height: 26px;
 }
+
+.section-header--index{
+  padding-bottom: 0;
+}
+.section-header--media{
+  text-align: center;
+  padding: 20px 7% 17px 7%;
+}
+.section-header__title--media{
+  margin-bottom: 0;
+}
+.section-header--form{
+  padding: 20px 7% 0 7%;
+  line-height: 24px;
+  font-size: 14PX;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+.section-header--form .section-header__title{
+  padding-bottom: 11px;
+}
+
+
+
 @media (min-width: $tablet-width){
   .section-header{
     width: 500px;
     padding: 20px;
     margin: 0 auto;
+    border-bottom: none;
   }
   .section-header__title{
     font-size: 21px;
+
+  }
+  .section-header--form .section-header__title{
+    padding-bottom: 6px;
+    font-size: 30px;
+  }
+  .section-header--form .section-header__description{
+    padding: 0 10px;
   }
   .section-header__title--media{
     font-size: 30px;
@@ -47,5 +65,10 @@ $desktop-width: 1200px;
   .section-header__description{
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+@media (min-width: $desktop-width){
+  .section-header--media{
+    margin-bottom: 18px;
   }
 }
