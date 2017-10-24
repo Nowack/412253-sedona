@@ -252,10 +252,10 @@ $desktop-width: 1200px;
   top: 17px;
   left: 17px;
 }
-.feedback-form__radio:hover > .feedback-form__radio + .checkbox-indicator{
+.feedback-form__label:hover > .feedback-form__radio + .checkbox-indicator{
     background-color: #e5e5e5;
 }
-.feedback-form__radio:active > .feedback-form__radio + .checkbox-indicator{
+.feedback-form__label:active > .feedback-form__radio + .checkbox-indicator{
     background-color: #d5d5d5;
 }
 .feedback-form__comment-wrap{
@@ -402,7 +402,19 @@ $desktop-width: 1200px;
     margin-bottom: 19px;
   }
   .feedback-form__field--advantages .feedback-form__wrap{
-    flex-basis: 45%;
+    flex-basis: auto;
+  }
+  .feedback-form__wrap--devil-bridge{
+    order: 1;
+  }
+  .feedback-form__wrap--slide-park{
+    order: 3;
+  }
+  .feedback-form__wrap--mount-bell{
+    order: 2;
+  }
+  .feedback-form__wrap--red-rocks{
+    order: 4;
   }
   .feedback-form__field--advantages .feedback-form__label{
     margin-bottom: 18px;
@@ -488,6 +500,12 @@ $desktop-width: 1200px;
     flex-basis: 100%;
     margin-bottom: 0;
   }
+  .feedback-form__field--advantages .feedback-form__column{
+    width: 100%;
+  }
+  .feedback-form__field--advantages .feedback-form__wrap{
+    flex-basis: 25%;
+  }
     .feedback-form__field--advantages .feedback-form__title-wrapp::before,
     .feedback-form__field--advantages .feedback-form__title-wrapp::after,
     .feedback-form__field--review .feedback-form__title-wrapp::before,
@@ -501,18 +519,7 @@ $desktop-width: 1200px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-.feedback-form__column--left,
-.feedback-form__column--right{
-  display: flex;
-  width: 50%;
-  justify-content: flex-end;
-}
-.feedback-form__field--advantages  .feedback-form__label{
-  width: 100%;
-}
-  .feedback-form__field--advantages .feedback-form__wrap{
-    flex-basis: 100%;
-  }
+
   .feedback-form__field--contacts .feedback-form__wrap{
     flex-basis: 100%;
   }
