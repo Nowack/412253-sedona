@@ -47,12 +47,12 @@
         <h1 class="visually-hidden">Форма для отзыва</h1>
         <section class="banner banner--inner-page banner--feedback-page"></section>
         <section class="feedback-form">
-          <header class="section-header section-header-form">
-            <h2 class="feedback-form__caption">Оставьте свой отзыв</h2>
-            <p class="feedback-form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <header class="section-header section-header--form">
+            <h2 class="section-header__title">Оставьте свой отзыв</h2>
+            <p class="section-header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </header>
           <form class="feedback-form__form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="feedback-form__field feedback-form__field-name">
+            <div class="feedback-form__field feedback-form__field--name">
               <span class="feedback-form__title">Представьтесь:</span>
               <div class="feedback-form__column">
                 <div class="feedback-form__wrap">
@@ -75,7 +75,7 @@
                 </div>
               </div>
             </div>
-            <div class="feedback-form__field feedback-form__field-contacts">
+            <div class="feedback-form__field feedback-form__field--contacts">
               <div class="feedback-form__title-wrapp">
                 <span class="feedback-form__title">Контактная информация:</span>
               </div>
@@ -100,7 +100,7 @@
                 </div>
               </div>
             </div>
-            <div class="feedback-form__field feedback-form__field-impression">
+            <div class="feedback-form__field feedback-form__field--impression">
               <span class="feedback-form__title">Ваше общее впечатление:</span>
               <div class="feedback-form__wrap">
                 <label class="feedback-form__label">
@@ -128,34 +128,40 @@
               <div class="feedback-form__title-wrapp">
                 <span class="feedback-form__title">Посещённые достопримечательности:</span>
               </div>
+
               <div class="feedback-form__column">
-                <div class="feedback-form__wrap">
-                  <label class="feedback-form__label">
-                    <input class="feedback-form__checkbox" type="checkbox" name="devil-bridge" checked>
-                    <span class="checkbox-indicator"></span>
-                    <span class="feedback-form__subscribe">Мост Дьявола</span>
-                  </label>
+                <div class="feedback-form__column--left">
+                  <div class="feedback-form__wrap">
+                    <label class="feedback-form__label">
+                      <input class="feedback-form__checkbox" type="checkbox" name="devil-bridge" checked>
+                      <span class="checkbox-indicator"></span>
+                      <span class="feedback-form__subscribe">Мост Дьявола</span>
+                    </label>
+                  </div>
+                  <div class="feedback-form__wrap">
+                    <label class="feedback-form__label">
+                      <input class="feedback-form__checkbox" type="checkbox" name="slide-park" checked>
+                      <span class="checkbox-indicator"></span>
+                      <span class="feedback-form__subscribe">Слайд-парк</span>
+                    </label>
+                  </div>
                 </div>
-                <div class="feedback-form__wrap">
-                  <label class="feedback-form__label">
-                    <input class="feedback-form__checkbox" type="checkbox" name="slide-park" checked>
-                    <span class="checkbox-indicator"></span>
-                    <span class="feedback-form__subscribe">Слайд-парк</span>
-                  </label>
-                </div>
-                <div class="feedback-form__wrap">
-                  <label class="feedback-form__label">
-                    <input class="feedback-form__checkbox" type="checkbox" name="mount-bell" checked>
-                    <span class="checkbox-indicator"></span>
-                    <span class="feedback-form__subscribe">Гора колокол</span>
-                  </label>
-                </div>
-                <div class="feedback-form__wrap">
-                  <label class="feedback-form__label">
-                    <input class="feedback-form__checkbox" type="checkbox" name="red-rocks">
-                    <span class="checkbox-indicator"></span>
-                    <span class="feedback-form__subscribe">Красные скалы</span>
-                  </label>
+
+                <div class="feedback-form__column--right">
+                  <div class="feedback-form__wrap">
+                    <label class="feedback-form__label">
+                      <input class="feedback-form__checkbox" type="checkbox" name="mount-bell" checked>
+                      <span class="checkbox-indicator"></span>
+                      <span class="feedback-form__subscribe">Гора колокол</span>
+                    </label>
+                  </div>
+                  <div class="feedback-form__wrap">
+                    <label class="feedback-form__label">
+                      <input class="feedback-form__checkbox" type="checkbox" name="red-rocks">
+                      <span class="checkbox-indicator"></span>
+                      <span class="feedback-form__subscribe">Красные скалы</span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -171,7 +177,7 @@
                 </label>
               </div>
             </div>
-            <div class="feedback-form__field-button">
+            <div class="feedback-form__field feedback-form__field--button">
               <button type="submit" class="button button--feedback-form" name="feedback-button">Отправить отзыв</button>
             </div>
             <span class="feedback-form__footnote">* - обязательные поля</span>
