@@ -3,6 +3,8 @@ $bg: #81b3d2;
 $bg-hover: #669ec0;
 $bg-active: #5496bd;
 $bg-disabled: #e5e5e5;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 .button{
   text-decoration: none;
   border: none;
@@ -30,6 +32,25 @@ $bg-disabled: #e5e5e5;
   }
   cursor: pointer;
 }
+.button--find-hotel{
+width: 220px;
+padding-left: 30px;
+padding-right: 30px;
+}
 .button--feedback-form{
   text-transform: uppercase;
+}
+@media (min-width: $tablet-width){
+  .button--find-hotel{
+  width: 400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+}
+@media (min-width: $desktop-width){
+    .button--find-hotel{
+    width: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

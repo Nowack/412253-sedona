@@ -7,7 +7,7 @@ $desktop-width: 1200px;
   padding: 5px 0 10px 0;
 }
 .find-hotel-wrap{
-  padding: 0 25px 0 25px;
+  padding: 0 10px;
 }
 .find-hotel__title{
   font-size: 21px;
@@ -31,5 +31,13 @@ $desktop-width: 1200px;
   .find-hotel__description{
     margin-top: 25px;
     margin-bottom: 18px;
+  }
+}
+@media (min-width: $desktop-width){
+  .find-hotel{
+    padding-top: 1px;
+  }
+  .find-hotel__description{
+    margin-bottom: 24px;
   }
 }

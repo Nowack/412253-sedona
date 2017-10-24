@@ -3,7 +3,7 @@ $bg-hover: #669ec0;
 $bg-active: #5496bd;
 $tablet-width: 768px;
 .social-list{
-  margin: 30px 0 ;
+  margin: 30px 0;
   padding: 0;
   display: flex;
 }
@@ -57,6 +57,9 @@ $tablet-width: 768px;
 
 }
 @media (min-width: $desktop-width){
+  .social-list{
+    margin-left: -23px;
+  }
   .social{
     flex-basis: 200px;
   }
