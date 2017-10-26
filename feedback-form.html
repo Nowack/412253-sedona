@@ -5,6 +5,9 @@
     <title>Седона: страница обратной связи</title>
     <link href="css/style.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div style="display: none">
@@ -167,7 +170,7 @@
                     <span class="feedback-form__title">Опишите свои эмоции:</span>
                   </span>
                   <span class="feedback-form__comment-wrap">
-                    <textarea class="feedback-form__comment" name="name" rows="8" cols="30" placeholder="Опишите подробно свои восторги"></textarea>
+                    <textarea class="feedback-form__comment" name="name" rows="8" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
                   </span>
                 </label>
               </div>
@@ -183,7 +186,7 @@
                 <p class="modal__description">
                   Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
                 </p>
-                <button class="button modal--close-false" type="button" name="modal--close-false">Ок</button>
+                <button class="button button--close-false" type="button" name="button--close-false">Ок</button>
               </div>
             </div>
             <div class="modal modal--true">
@@ -193,7 +196,7 @@
                 <p class="modal__description">
                   Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
                 </p>
-                <button class="button modal--close-true" type="button" name="modal--close-true">Закрыть окно</button>
+                <button class="button button--close-true" type="button" name="button--close-true">Закрыть окно</button>
               </div>
             </div>
           </form>
