@@ -2,33 +2,23 @@ $main-bg: #ffffff;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 @font-face{
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff");
-  font-style: normal;
-  font-weight: normal;
   font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
 }
 @font-face{
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff");
-  font-style: normal;
-  font-weight: bold;
   font-display: swap;
-}
-@font-face{
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2");
   font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-}
-@font-face{
+  font-weight: 700;
   font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
 }
+
+
 .page-body{
   margin: 0;
   padding: 0;
@@ -51,7 +41,6 @@ $desktop-width: 1200px;
   .page-body__container{
     width: 768px;
     margin: 0 auto;
-    padding: 0 60px;
   }
 }
 @media (min-width: $desktop-width){
@@ -60,6 +49,5 @@ $desktop-width: 1200px;
   }
   .page-body__container{
     width: 1200px;
-    padding: 0 40px;
   }
 }

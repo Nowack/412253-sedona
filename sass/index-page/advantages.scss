@@ -98,6 +98,7 @@ $retina-dppx: 1.5dppx;
   height: 40px;
   width: 40px;
   margin-right: 10px;
+  flex-shrink: 0;
 }
 .advantages__image{
   width: 100%;
@@ -150,10 +151,10 @@ $retina-dppx: 1.5dppx;
   }
   .advantages__item-detail{
     padding-top: 53px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 35px;
+    padding-right: 35px;
     padding-bottom: 25px;
-    width: 250px;
+    width: 280px;
   }
   .advantages__item-detail .advantages__detail-title{
     margin-top: 0px;
