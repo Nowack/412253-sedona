@@ -6,24 +6,28 @@ $desktop-width: 1200px;
   src: url("../fonts/ptsans.woff");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 @font-face{
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 @font-face{
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 @font-face{
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 .page-body{
   margin: 0;
@@ -31,7 +35,7 @@ $desktop-width: 1200px;
   min-width: 320px;
   background-color: $main-bg;
   font:{
-    family: "PT Sans","Mariad Pro", sans-serif;
+    family: "PT Sans","Arial", sans-serif;
     size: 14px;
     weight: 500;
     style: normal;
