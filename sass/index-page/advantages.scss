@@ -197,6 +197,14 @@ $retina-dppx: 1.5dppx;
     margin-left: 30px;
     margin-right: 30px;
   }
+  .advantages__item-detail-first .advantages__title{
+    width: 150px;
+    padding-left: 43px;
+    padding-right: 40px;
+  }
+  .advantages__item-detail .advantages__title{
+    width: 151px;
+  }
   .advantages__item-detail-first .advantages__description{
     margin-left: 42px;
     margin-right: 43px;
@@ -325,13 +333,7 @@ $retina-dppx: 1.5dppx;
     padding-left: 1px;
     padding-right: 1px;
   }
-  .advantages__item-detail .advantages__title{
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-top: 0;
-    padding-left: 52px;
-    padding-right: 51px;
-  }
+
 
   .advantages__item-detail .advantages__description{
     padding-top: 0;
@@ -348,14 +350,18 @@ $retina-dppx: 1.5dppx;
   .advantages__item-detail-first{
     padding-top: 54px;
   }
-  .advantages__item-detail-first .advantages__description{
+  .advantages__item-detail .advantages__title{
+    margin-top: 0;
+    margin-bottom: 10px;
     padding-top: 0;
-  }
-
-  .advantages__item-detail  .advantages__title{
-    width: 70%;
+    padding-left: 52px;
+    padding-right: 51px;
+    width: 151px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .advantages__item-detail-first .advantages__title{
+    width: 151px;
   }
   .advantages__item-shortly-wrapp{
     margin-left: 12%;
