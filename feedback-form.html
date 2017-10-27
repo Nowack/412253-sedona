@@ -42,7 +42,8 @@
                 </picture>
               </a>
             </div>
-            <button class="main-nav__toggle" type="button" name="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-nav__toggle--opend" type="button" name="main-nav__toggle--opend"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-nav__toggle--closed" type="button" name="main-nav__toggle--closed"><span class="visually-hidden">Открыть меню</span></button>
           </div>
         </nav>
       </header>
@@ -52,7 +53,7 @@
         <section class="feedback-form">
           <header class="section-header section-header--form">
             <h2 class="section-header__title">Оставьте свой отзыв</h2>
-            <p class="section-header__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="section-header__description section-header__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </header>
           <form class="feedback-form__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="feedback-form__field feedback-form__field--name">
@@ -151,7 +152,7 @@
                   <label class="feedback-form__label">
                     <input class="feedback-form__checkbox" type="checkbox" name="mount-bell" checked>
                     <span class="checkbox-indicator"></span>
-                    <span class="feedback-form__subscribe">Гора колокол</span>
+                    <span class="feedback-form__subscribe">Гора Колокол</span>
                   </label>
                 </div>
                 <div class="feedback-form__wrap feedback-form__wrap--red-rocks">
@@ -186,7 +187,9 @@
                 <p class="modal__description">
                   Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
                 </p>
-                <button class="button button--close-false" type="button" name="button--close-false">Ок</button>
+                <div class="modal__button-wrapp">
+                    <button class="button button--close-false" type="button" name="button--close-false">Ок</button>
+                </div>
               </div>
             </div>
             <div class="modal modal--true">
@@ -196,7 +199,9 @@
                 <p class="modal__description">
                   Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
                 </p>
-                <button class="button button--close-true" type="button" name="button--close-true">Закрыть окно</button>
+                <div class="modal__button-wrapp">
+                  <button class="button button--close-true" type="button" name="button--close-true">Закрыть окно</button>
+                </div>
               </div>
             </div>
           </form>
