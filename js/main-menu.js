@@ -4,7 +4,7 @@ var popup = document.querySelector(".main-nav");
 var listLeft = document.querySelector(".site-list--left");
 var listRight = document.querySelector(".site-list--right");
 
-link.addEventListener("click", function(evt){
+buttonMenuClosed.addEventListener("click", function(evt){
 evt.preventDefault();
 
 popup.classList.remove("main-menu--opend");
@@ -12,10 +12,10 @@ listLeft.classList.add("main-nav__list--closed");
 listRight.classList.add("main-nav__list--closed");
 });
 
-link.addEventListener("click", function(evt){
+buttonMenuOpen.addEventListener("click", function(evt){
 evt.preventDefault();
 
-popup.classList.remove("main-menu--opend");
-listLeft.classList.add("main-nav__list--closed");
-listRight.classList.add("main-nav__list--closed");
+popup.classList.add("main-menu--opend");
+listLeft.classList.remove("main-nav__list--closed");
+listRight.classList.remove("main-nav__list--closed");
 });
