@@ -2,7 +2,7 @@ $tablet-width: 768px;
 $desktop-width: 1200px;
 .like{
   padding-right: 6.3%;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
   padding-left: 0;
 }
 .like-button{
@@ -19,15 +19,26 @@ $desktop-width: 1200px;
   width: 22px;
   height: 20px;
   fill: #a9a9a9;
+  margin-left: -5px;
 }
 @media (min-width: $tablet-width){
   .like{
     padding: 0;
     padding-top: 15px;
     padding-right: 10px;
+    width: 67px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 0;
   }
 }
 @media (min-width: $desktop-width){
+  .like{
+    width: 67px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 0;
+  }
   .like-icon{
     fill: #ffffff;
   }

@@ -14,7 +14,7 @@ $retina-dppx: 1.5dppx;
     url(../img/banner/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position:
-    center,
+    center 80px,
     bottom center,
     top center;
   background-size:
@@ -36,11 +36,15 @@ $retina-dppx: 1.5dppx;
   background-position:
     center 50px ,
     bottom center,
-    center -100px;
+    center -235px;
   background-size:
     230px auto,
     cover,
     cover;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url(../img/banner/bg-back-mobile@2x.jpg);
+      background-size: 768px auto;
+    }
 }
 .banner--feedback-page{
   background-color: #6082a5;
@@ -56,7 +60,7 @@ $retina-dppx: 1.5dppx;
       url(../img/banner/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position:
-      center,
+      center 80px,
       bottom center,
       top center;
     background-size:
@@ -76,13 +80,17 @@ $retina-dppx: 1.5dppx;
       url(../img/banner/bg-intro-triangle-tablet.svg),
       url(../img/banner/bg-back-tablet@1x.jpg);
     background-position:
-      center 90px,
+      center 94px,
       center bottom,
-      center -100px;
+      center -225px;
     background-size:
       460px auto,
       contain,
       cover;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+        background-image: url(../img/banner/bg-back-mobile@2x.jpg);
+        background-size: 768px auto;
+      }
   }
   .banner--media{
     margin-bottom: 60px;
@@ -101,7 +109,7 @@ $retina-dppx: 1.5dppx;
       url(../img/banner/bg-back-desktop@1x.jpg);
     background-repeat: no-repeat;
     background-position:
-      center,
+      center 83px,
       bottom center,
       top center;
     background-size:
@@ -116,15 +124,19 @@ $retina-dppx: 1.5dppx;
       url(../img/banner/bg-intro-triangle-desktop.svg),
       url(../img/banner/bg-back-desktop@1x.jpg);
     background-position:
-      center 100px,
+      center 102px,
       bottom center,
-      center -100px;
+      center -215px;
     background-size:
       460px auto,
       contain,
       cover;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+        background-image: url(../img/banner/bg-back-mobile@2x.jpg);
+        background-size: 768px auto;
+      }
   }
   .banner--media{
-    margin-bottom: 90px;
+    margin-bottom: 96px;
   }
 }

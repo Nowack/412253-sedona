@@ -18,6 +18,9 @@ $desktop-width: 1200px;
   &:hover{
     background-color: $bg-hover;
   }
+  &:focus{
+    background-color: $bg-hover;
+  }
   &:active{
     background-color: $bg-active;
     color: rgba(255, 255, 255, 0.3);
@@ -45,14 +48,32 @@ $desktop-width: 1200px;
   margin-top: 25px;
   font-size: 18px;
 }
+.button--close-true,
+.button--close-false{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.button--close-true{
+  width: 87%;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+.button--close-false{
+  margin-top: 28px;
+  margin-bottom: 30px;
+  width: 60%;
+}
 @media (min-width: $tablet-width){
   .button--find-hotel{
-  width: 400px;
+  width: 647px;
   padding-left: 30px;
   padding-right: 30px;
   }
   .button--feedback-form{
-    margin-top: 10px;
+    margin-top: 6px;
+    line-height: 26px;
+    padding-left: 10px;
+    padding-right: 22px;
   }
 }
 @media (min-width: $desktop-width){
@@ -62,6 +83,7 @@ $desktop-width: 1200px;
     padding-right: 30px;
   }
   .button--feedback-form{
+    padding-left: 23px;
     margin-top: 5px;
   }
 }

@@ -38,12 +38,15 @@ $desktop-width: 1200px;
   text-transform: none;
   text-align: 24px;
 }
+.media__author-wrapp{
+  padding-bottom: 5px;
+}
 .media__video-wrapp{
   width: 100%;
   margin: 7px auto 0;
 }
 .media__video{
-  margin-bottom: 55px;
+  margin-bottom: 58px;
 }
 .media__control-panel{
   width: 100%;
@@ -56,10 +59,11 @@ $desktop-width: 1200px;
   display: flex;
 }
 .media__scroll-bar-wrap{
-  width: 100%;
+  width: 88%;
   height: 45px;
   position: absolute;
   top: -45px;
+  left: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
@@ -103,16 +107,16 @@ $desktop-width: 1200px;
   }
 }
 .media__video-button--replay{
-  margin-left: 12px;
+  margin-left: 29px;
   margin-right: auto;
 }
 .media__video-button--subtitles{
-  margin-right: 27px;
-  width: 30px;
+  margin-right: 20px;
+  width: 27px;
   height: 20px;
 }
 .media__video-button--fullscreen{
-  margin-right: 33px;
+  margin-right: 30px;
 }
 @media (min-width: $tablet-width){
   .media{
@@ -145,13 +149,15 @@ $desktop-width: 1200px;
     box-sizing: border-box;
   }
   .media__wrapp{
-    bottom: 0;
+
     display: flex;
     justify-content: space-between;
-    padding-bottom: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 9px;
+    padding-left: 21px;
+    padding-right: 18px;
   }
+
   .media__description-wrapp{
     background-color: #f2f2f2;
     position: relative;
@@ -167,6 +173,7 @@ $desktop-width: 1200px;
   }
   .media__video{
     width: 100%;
+    margin-bottom: 53px;
   }
   .media__control-panel{
     margin-top: -93px;
@@ -178,6 +185,8 @@ $desktop-width: 1200px;
   .media__scroll-bar-wrap{
     top: 0;
     height: 93px;
+    width: 100%;
+    left: 0;
   }
   .media__scroll-bar{
     width: 390px;
@@ -198,12 +207,12 @@ $desktop-width: 1200px;
     margin-right: auto;
   }
   .media__video-button--subtitles{
-    margin-right: 37px;
+    margin-right: 21px;
     width: 24px;
     height: 20px;
   }
   .media__video-button--fullscreen{
-    margin-right: 51px;
+    margin-right: 40px;
   }
 }
 @media (min-width: $desktop-width){
@@ -211,7 +220,7 @@ $desktop-width: 1200px;
     padding: 0;
   }
   .media__photo-list{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .media__photo-item{
     width: 33.33%;
@@ -238,10 +247,20 @@ $desktop-width: 1200px;
     width: 100%;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-left: 21px;
+    padding-right: 18px;
+    display: flex;
+    justify-content: space-between;
   }
+
   .media__video{
     width: 800px;
     height: 500px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 86px auto;
+  }
+  .media__video-wrapp{
+    margin-top: 20px;
   }
 }

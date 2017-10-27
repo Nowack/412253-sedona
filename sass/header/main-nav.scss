@@ -18,17 +18,19 @@ $tablet-width: 768px;
 .main-nav__list--closed{
   display: none;
 }
-.main-nav__toggle--closed{
+.main-nav__toggle--opend{
   position: absolute;
-  height: 32px;
-  width: 32px;
-  bottom: 10px;
-  right: 20px;
+  height: 34px;
+  width: 34px;
+  bottom: 12px;
+  right: 13px;
   cursor: pointer;
   background-color: #ffffff;
-  border: 1px solid red;
+  border: none;
+  z-index: 5;
+  display: none;
 }
-.main-nav .main-nav__toggle--closed::before{
+.main-nav .main-nav__toggle--opend::before{
   content: "";
   position: absolute;
   top: 13px;
@@ -41,7 +43,7 @@ $tablet-width: 768px;
   box-shadow: 0 8px 0 0 $nav-bg, 0 -8px 0 0 $nav-bg;
   z-index: 5;
 }
-.main-nav--opend .main-nav__toggle--opend{
+.main-nav--opend .main-nav__toggle--closed{
   position: absolute;
   height: 32px;
   width: 32px;
@@ -49,9 +51,11 @@ $tablet-width: 768px;
   left: auto;
   right: 16px;
   background-color: transparent;
+  border: none;
+
 }
-.main-nav--opend .main-nav__toggle--opend::before,
-.main-nav--opend .main-nav__toggle--opend::after{
+.main-nav--opend .main-nav__toggle--closed::before,
+.main-nav--opend .main-nav__toggle--closed::after{
   content: "";
   position: absolute;
   top: 14px;
@@ -60,11 +64,11 @@ $tablet-width: 768px;
   height: 3px;
   background-color: #ffffff;
 }
-.main-nav--opend .main-nav__toggle--opend::before{
+.main-nav--opend .main-nav__toggle--closed::before{
   transform: rotate(45deg);
   box-shadow: none;
 }
-.main-nav--opend .main-nav__toggle--opend::after{
+.main-nav--opend .main-nav__toggle--closed::after{
   transform: rotate(-45deg);
 }
 @media (min-width: $tablet-width){
@@ -81,7 +85,8 @@ $tablet-width: 768px;
     background-color: #ffffff;
   }
 
-  .main-nav__toggle{
+  .main-nav__toggle--opend,
+  .main-nav__toggle--closed{
     display: none;
   }
 }

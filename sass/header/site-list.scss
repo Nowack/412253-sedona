@@ -20,6 +20,11 @@ $desktop-width: 1200px;
     border-top-color: $border-top-hover;
     border-bottom-color: $border-bottom-hover;
   }
+  &:focus{
+    background-color: $nav-bg-hover;
+    border-top-color: $border-top-hover;
+    border-bottom-color: $border-bottom-hover;
+  }
   &:active{
     background-color: $nav-bg-down;
     border-top-color: $border-top-active;
@@ -64,7 +69,9 @@ $desktop-width: 1200px;
     &:hover{
       background-color: #ffffff;
     }
-
+    &:focus{
+      background-color: #ffffff;
+    }
     border: none;
     flex-basis: 50%;
   }
@@ -80,10 +87,16 @@ $desktop-width: 1200px;
     &:hover{
       background-color: transparent;
     }
+    &:focus{
+      background-color: transparent;
+    }
   }
   .site-list__link{
     color: #000000;
     &:hover{
+      color: #81b3d2;
+    }
+    &:focus{
       color: #81b3d2;
     }
     &:active{
@@ -95,6 +108,9 @@ $desktop-width: 1200px;
   .site-list__link--active{
     color: #766357;
     &:hover{
+      color: #766357;
+    }
+    &:focus{
       color: #766357;
     }
   }

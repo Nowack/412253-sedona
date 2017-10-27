@@ -9,20 +9,21 @@ $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 .advantages{
   margin-bottom: 20px;
+  line-height: 24px;
 }
 .advantages__title{
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 .advantages__detail-title{
-  margin: 5px 0 18px 0;
+  margin: 11px 0 16px 0;
   font-size: 18px;
   line-height: 26px;
 }
 .advantages__item-detail-first .advantages__title{
-  margin-top: 52px;
-  margin-bottom: 10px;
+  margin-top: 37px;
+  margin-bottom: 6px;
 }
 .advantages__item-detail{
   background-color: $detail-head;
@@ -35,7 +36,7 @@ $retina-dppx: 1.5dppx;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-top: -20px;
+  margin-top: -7px;
   padding: 40px 20px 25px 20px;
 }
 .advantages__list{
@@ -64,7 +65,7 @@ $retina-dppx: 1.5dppx;
 .advantages__detail-item{
   display: flex;
   list-style: none;
-  padding: 5px 25px 14px 0;
+  padding: 1px 25px 14px 0;
   line-height: 21px;
 }
 
@@ -86,6 +87,9 @@ $retina-dppx: 1.5dppx;
   height: 40px;
   width: 40px;
   fill: #81b3d2;
+}
+.advantages__icon--burger{
+  margin-top: 5px;
 }
 .advantages__description{
   line-height: 21px;
@@ -138,8 +142,8 @@ $retina-dppx: 1.5dppx;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 60px;
     &:nth-child(2){
       order: 3;
@@ -148,9 +152,10 @@ $retina-dppx: 1.5dppx;
   .advantages__detail-title{
     font-size: 21px;
     margin-bottom: 23px;
+    margin-top: 1px;
   }
   .advantages__item-detail{
-    padding-top: 53px;
+    padding-top: 48px;
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 25px;
@@ -172,10 +177,32 @@ $retina-dppx: 1.5dppx;
     background-image: none;
     margin-top: 0;
   }
+  .advantages__item-detail{
+    padding-top: 46px;
+    width: 383px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
   .advantages__item-detail .advantages__title{
     margin-top: 0;
     margin-bottom: 10px;
     padding-top: 0;
+    padding-left: 52px;
+    padding-right: 51px;
+  }
+
+  .advantages__item-detail .advantages__description{
+    padding-top: 5px;
+    line-height: 21px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .advantages__item-detail-first .advantages__description{
+    margin-left: 42px;
+    margin-right: 43px;
+  }
+  .advantages__icon--burger{
+    margin-top: 2px;
   }
   .advantages__title{
     font-size: 21px;
@@ -236,12 +263,23 @@ $retina-dppx: 1.5dppx;
   .advantages__wrapp-revers{
     flex-direction: row-reverse;
   }
-
+  .advantages__detail-text{
+    width: 166px;
+  }
+  .advantages__detail-text--house{
+    width: 166px;
+  }
+  .advantages__detail-text--gift{
+    width: 182px;
+  }
+  .advantages__detail-text--burger{
+    width: 158px;
+  }
 }
 
 @media (min-width: $desktop-width){
   .advantages__wrapp{
-    margin-top: 5px;
+    margin-top: 0;
   }
   .advantages__wrapp-revers{
     margin-top: 0;
@@ -256,23 +294,64 @@ $retina-dppx: 1.5dppx;
     padding-right: 5px;
   }
   .advantages__detail-list{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     padding-left: 0;
   }
   .advantages__detail-item{
     padding-top: 35px;
-    padding-left: 55px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .advantages__detail-text{
+    width: 255px;
+  }
+  .advantages__detail-text--house{
+    width: 263px;
+  }
+  .advantages__detail-text--gift{
+    width: 212px;
+  }
+  .advantages__detail-text--burger{
+    width: 284px;
   }
   .advantages__detail-item .advantages__detail-title{
     margin-top: 0;
   }
+
   .advantages__item-detail{
-    width: 450px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-top: 53px;
+    width: 600px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
+  .advantages__item-detail .advantages__title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 52px;
+    padding-right: 51px;
+  }
+
+  .advantages__item-detail .advantages__description{
+    padding-top: 0;
+    line-height: 21px;
+    margin-left: 77px;
+    margin-right: 77px;
+  }
+  .advantages__item-detail-first .advantages__description{
+    margin-left: 49px;
+    margin-right: 49px;
+    padding-top: 0;
+  }
+
+  .advantages__item-detail-first{
+    padding-top: 54px;
+  }
+  .advantages__item-detail-first .advantages__description{
+    padding-top: 0;
+  }
+
   .advantages__item-detail  .advantages__title{
     width: 70%;
     margin-left: auto;

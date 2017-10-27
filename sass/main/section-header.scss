@@ -5,13 +5,14 @@ $desktop-width: 1200px;
   background-color: $main-bg;
   margin: 0;
   padding: 20px 8% 20px 8%;
+  line-height: 24px;
 }
 
 .section-header__title{
   font-size: 18px;
 }
 .section-header__description{
-  line-height: 26px;
+  margin-top: 28px;
 }
 
 .section-header--index{
@@ -19,10 +20,13 @@ $desktop-width: 1200px;
 }
 .section-header--media{
   text-align: center;
-  padding: 20px 7% 17px 7%;
+  padding: 20px 7% 15px 7%;
 }
 .section-header__title--media{
   margin-bottom: 0;
+}
+.section-header__description--media{
+  margin-top: 22px;
 }
 .section-header--form{
   padding: 20px 7% 0 7%;
@@ -34,7 +38,9 @@ $desktop-width: 1200px;
 .section-header--form .section-header__title{
   padding-bottom: 11px;
 }
-
+.section-header__description--form{
+  margin-top: 19px;
+}
 
 
 @media (min-width: $tablet-width){
@@ -46,7 +52,13 @@ $desktop-width: 1200px;
   }
   .section-header__title{
     font-size: 21px;
-
+  }
+  .section-header__description{
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+  .section-header--form{
+    width: 466px;
   }
   .section-header--form .section-header__title{
     padding-bottom: 6px;
@@ -62,13 +74,16 @@ $desktop-width: 1200px;
     text-align: center;
     margin-bottom: 18px;
   }
-  .section-header__description{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
 }
 @media (min-width: $desktop-width){
   .section-header--media{
     margin-bottom: 18px;
+  }
+  .section-header--media .section-header__description{
+    padding-top: 2px;
+    padding-bottom: 19px;
+  }
+  .section-header--form{
+    width: 466px;
   }
 }
